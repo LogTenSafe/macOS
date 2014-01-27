@@ -1,0 +1,51 @@
+
+/* Class = "NSButtonCell"; title = "Check for logbook changes and automatically back up"; ObjectID = "0nf-ci-a6K"; */
+"0nf-ci-a6K.title" = "Check for logbook changes and automatically back up";
+
+/* Class = "NSWindow"; title = "LogTenSafe"; ObjectID = "4vm-4k-emT"; */
+"4vm-4k-emT.title" = "LogTenSafe";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayPattern = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)"; ObjectID = "7aP-YO-FL6"; */
+"7aP-YO-FL6.ibShadowedDisplayPattern" = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayPattern = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)"; ObjectID = "8oV-BP-R4S"; */
+"8oV-BP-R4S.ibShadowedDisplayPattern" = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)";
+
+/* Class = "NSTextFieldCell"; title = "File Size"; ObjectID = "A0J-LF-x4O"; */
+"A0J-LF-x4O.title" = "File Size";
+
+/* Class = "NSTextFieldCell"; title = "Hostname"; ObjectID = "CrT-bJ-wza"; */
+"CrT-bJ-wza.title" = "Hostname";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayPattern = "from %{value1}@"; ObjectID = "Dbu-dX-2su"; */
+"Dbu-dX-2su.ibShadowedDisplayPattern" = "from %{value1}@";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayPattern = "%{value1}@ hr"; ObjectID = "EZY-s2-cjD"; */
+"EZY-s2-cjD.ibShadowedDisplayPattern" = "%{value1}@ hr";
+
+/* Class = "NSButtonCell"; title = "Restore"; ObjectID = "Ou5-le-JUe"; */
+"Ou5-le-JUe.title" = "Restore";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayPattern = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)"; ObjectID = "X9U-MP-li0"; */
+"X9U-MP-li0.ibShadowedDisplayPattern" = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)";
+
+/* Class = "NSButtonCell"; title = "Back Up Now"; ObjectID = "ZBi-NT-e1C"; */
+"ZBi-NT-e1C.title" = "Back Up Now";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayPattern = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)"; ObjectID = "a8R-T3-PbT"; */
+"a8R-T3-PbT.ibShadowedDisplayPattern" = "Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)";
+
+/* Class = "NSTextFieldCell"; title = "Date"; ObjectID = "cTS-L9-NKC"; */
+"cTS-L9-NKC.title" = "Date";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayPattern = "%{value1}@ hr total"; ObjectID = "kn0-5P-iBY"; */
+"kn0-5P-iBY.ibShadowedDisplayPattern" = "%{value1}@ hr total";
+
+/* Class = "NSTextFieldCell"; title = "New backups will only be added if your logbook has changed since the last time it was backed up."; ObjectID = "oKZ-8W-DSd"; */
+"oKZ-8W-DSd.title" = "New backups will only be added if your logbook has changed since the last time it was backed up.";
+
+/* Class = "NSTextFieldCell"; title = "Last Flight"; ObjectID = "v9q-Tu-3Rf"; */
+"v9q-Tu-3Rf.title" = "Last Flight";
+
+/* Class = "NSTextFieldCell"; title = "Total Time"; ObjectID = "vHw-tm-kJO"; */
+"vHw-tm-kJO.title" = "Total Time";

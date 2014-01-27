@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LTSProgressWindowController">
+            <connections>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Progress" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" showsToolbarButton="NO" wantsToBeColor="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="87"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wSd-3c-ql9">
+                        <rect key="frame" x="18" y="50" width="444" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Prompt" id="Hxy-F6-D9G">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            <connections>
+                                <binding destination="-2" name="value" keyPath="prompt" id="Pu3-9W-csh"/>
+                            </connections>
+                        </textFieldCell>
+                    </textField>
+                    <progressIndicator maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="MjP-Nt-mEr">
+                        <rect key="frame" x="20" y="19" width="440" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <binding destination="-2" name="isIndeterminate" keyPath="request.totalBytesRead" id="gqK-kO-PuI"/>
+                            <binding destination="-2" name="maxValue" keyPath="request.postLength" id="WcI-xX-hJw"/>
+                            <binding destination="-2" name="value" keyPath="request.totalBytesSent" previousBinding="WcI-xX-hJw" id="wAZ-GB-0Hw"/>
+                        </connections>
+                    </progressIndicator>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MjP-Nt-mEr" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="8mU-KP-HWr"/>
+                    <constraint firstItem="wSd-3c-ql9" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="AGi-2t-15I"/>
+                    <constraint firstItem="wSd-3c-ql9" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" symbolic="YES" id="DuE-zt-3R5"/>
+                    <constraint firstAttribute="trailing" secondItem="wSd-3c-ql9" secondAttribute="trailing" constant="20" symbolic="YES" id="LnX-UR-xBa"/>
+                    <constraint firstAttribute="bottom" secondItem="MjP-Nt-mEr" secondAttribute="bottom" constant="20" symbolic="YES" id="djO-JG-3xg"/>
+                    <constraint firstAttribute="trailing" secondItem="MjP-Nt-mEr" secondAttribute="trailing" constant="20" symbolic="YES" id="h5a-lI-r6s"/>
+                    <constraint firstItem="MjP-Nt-mEr" firstAttribute="top" secondItem="wSd-3c-ql9" secondAttribute="bottom" constant="8" symbolic="YES" id="h98-to-JMg"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+        </window>
+    </objects>
+</document>

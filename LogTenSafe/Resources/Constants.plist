@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URLBase</key>
+	<string>http://logtensafe.com</string>
+	<key>BackupsPath</key>
+	<string>/backups.json</string>
+	<key>LoginPath</key>
+	<string>/login.json</string>
+	<key>UploadPath</key>
+	<string>/backups.json</string>
+</dict>
+</plist>

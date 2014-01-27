@@ -1,0 +1,21 @@
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "1"; */
+"1.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "3FX-yH-IJ6"; */
+"3FX-yH-IJ6.title" = "Quit";
+
+/* Class = "NSButtonCell"; title = "Log In"; ObjectID = "67N-3J-5gf"; */
+"67N-3J-5gf.title" = "Log In";
+
+/* Class = "NSTextFieldCell"; title = "Login:"; ObjectID = "J6y-CC-zjq"; */
+"J6y-CC-zjq.title" = "Login:";
+
+/* Class = "NSButtonCell"; title = "I don’t have an account."; ObjectID = "JGh-Hh-hKw"; */
+"JGh-Hh-hKw.title" = "I don’t have an account.";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "ym1-jy-CTQ"; */
+"ym1-jy-CTQ.title" = "Password:";
+
+/* Class = "NSTextFieldCell"; title = "Please log in to LogTenSafe."; ObjectID = "zSH-SD-z2s"; */
+"zSH-SD-z2s.title" = "Please log in to LogTenSafe.";

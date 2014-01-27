@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LTSBackupListWindowController">
+            <connections>
+                <outlet property="backupsArrayController" destination="tul-jj-Vt9" id="BVi-er-UdL"/>
+                <outlet property="collectionView" destination="eo0-Kj-UoH" id="M5f-5r-DQX"/>
+                <outlet property="collectionViewItemTemplate" destination="jer-FP-fNU" id="APs-YR-BEg"/>
+                <outlet property="window" destination="4vm-4k-emT" id="bVv-y7-D5B"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <arrayController objectClassName="LTSBackup" id="tul-jj-Vt9" userLabel="Backups Array Controller">
+            <declaredKeys>
+                <string>createdAt</string>
+                <string>lastFlightDate</string>
+                <string>lastFlightOrigin</string>
+                <string>totalHours</string>
+                <string>hostname</string>
+                <string>logbookFileSize</string>
+                <string>logbookFingerprint</string>
+                <string>downloadURL</string>
+                <string>lastFlightDestination</string>
+                <string>lastFlightDuration</string>
+            </declaredKeys>
+        </arrayController>
+        <collectionViewItem id="1We-5z-rb4" customClass="LTSBackupCollectionViewItem">
+            <connections>
+                <outlet property="view" destination="jer-FP-fNU" id="Bae-XD-wo7"/>
+            </connections>
+        </collectionViewItem>
+        <window title="LogTenSafe" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="4vm-4k-emT">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="570" height="674"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+            <value key="minSize" type="size" width="640" height="310"/>
+            <view key="contentView" id="ahV-uc-qk7">
+                <rect key="frame" x="0.0" y="0.0" width="570" height="674"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="XZA-yI-3xS">
+                        <rect key="frame" x="18" y="635" width="364" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Check for logbook changes and automatically back up" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="0nf-ci-a6K">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="backupAutomatically" id="jZY-6u-FPt"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0gr-eg-eM9">
+                        <rect key="frame" x="434" y="626" width="122" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Back Up Now" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZBi-NT-e1C">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="backupNow:" target="-2" id="fUo-XN-0BR"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oKG-Hz-KLT">
+                        <rect key="frame" x="37" y="601" width="334" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="New backups will only be added if your logbook has changed since the last time it was backed up." id="oKZ-8W-DSd">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncx-dx-3eZ">
+                        <rect key="frame" x="0.0" y="0.0" width="570" height="593"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" id="YnY-Zl-QqA">
+                            <rect key="frame" x="1" y="1" width="568" height="591"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <collectionView selectable="YES" maxNumberOfColumns="1" id="eo0-Kj-UoH">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="591"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="secondaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <binding destination="tul-jj-Vt9" name="content" keyPath="arrangedObjects" id="OGH-PU-8nq"/>
+                                        <binding destination="tul-jj-Vt9" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="OGH-PU-8nq" id="VPb-bw-5UV"/>
+                                        <outlet property="itemPrototype" destination="1We-5z-rb4" id="y2r-uS-Cae"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="OSA-SM-bih">
+                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="ck1-aC-lQn">
+                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ncx-dx-3eZ" secondAttribute="bottom" id="0qj-Bt-Ymw"/>
+                    <constraint firstItem="oKG-Hz-KLT" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" constant="39" id="1R6-V3-cQ4"/>
+                    <constraint firstItem="Ncx-dx-3eZ" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" id="873-Bm-HaP"/>
+                    <constraint firstAttribute="trailing" secondItem="0gr-eg-eM9" secondAttribute="trailing" constant="20" symbolic="YES" id="HIB-NQ-htj"/>
+                    <constraint firstItem="Ncx-dx-3eZ" firstAttribute="top" secondItem="oKG-Hz-KLT" secondAttribute="bottom" constant="8" symbolic="YES" id="LcU-nM-e6z"/>
+                    <constraint firstItem="0gr-eg-eM9" firstAttribute="top" secondItem="ahV-uc-qk7" secondAttribute="top" constant="20" symbolic="YES" id="PXg-II-URA"/>
+                    <constraint firstItem="0gr-eg-eM9" firstAttribute="baseline" secondItem="XZA-yI-3xS" secondAttribute="baseline" id="eMV-7U-4u6"/>
+                    <constraint firstItem="oKG-Hz-KLT" firstAttribute="top" secondItem="XZA-yI-3xS" secondAttribute="bottom" constant="8" symbolic="YES" id="ias-EM-hbf"/>
+                    <constraint firstAttribute="trailing" secondItem="Ncx-dx-3eZ" secondAttribute="trailing" id="jLM-Ts-uzF"/>
+                    <constraint firstItem="XZA-yI-3xS" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" constant="20" symbolic="YES" id="laI-h9-aEI"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="Bcy-a5-FFe"/>
+            </connections>
+        </window>
+        <view id="jer-FP-fNU">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y5Z-kX-eLl">
+                    <rect key="frame" x="3" y="52" width="40" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Date" id="cTS-L9-NKC">
+                        <dateFormatter key="formatter" dateStyle="long" timeStyle="short" id="fyu-BP-r8I"/>
+                        <font key="font" metaFont="systemBold" size="15"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="1We-5z-rb4" name="value" keyPath="representedObject.createdAt" id="zZZ-63-jF8"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ab4-pA-Xpn">
+                    <rect key="frame" x="3" y="30" width="170" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hostname" id="CrT-bJ-wza">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="1We-5z-rb4" name="displayPatternValue1" keyPath="representedObject.hostname" id="Dbu-dX-2su">
+                            <dictionary key="options">
+                                <string key="NSDisplayPattern">from %{value1}@</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ztu-Gw-LlA">
+                    <rect key="frame" x="177" y="30" width="170" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Total Time" id="vHw-tm-kJO">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="1We-5z-rb4" name="displayPatternValue1" keyPath="representedObject.totalHours" id="EZY-s2-cjD">
+                            <dictionary key="options">
+                                <string key="NSDisplayPattern">%{value1}@ hr</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aKU-HD-pVb">
+                    <rect key="frame" x="3" y="5" width="344" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Last Flight" id="v9q-Tu-3Rf">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="1We-5z-rb4" name="hidden" keyPath="downloadRequest" id="inO-8J-LVu">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNotNil</string>
+                            </dictionary>
+                        </binding>
+                        <binding destination="1We-5z-rb4" name="displayPatternValue1" keyPath="representedObject.lastFlightDate" id="7aP-YO-FL6">
+                            <dictionary key="options">
+                                <string key="NSDisplayPattern">Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)</string>
+                                <string key="NSValueTransformerName">LTSShortDateValueTransformer</string>
+                            </dictionary>
+                        </binding>
+                        <binding destination="1We-5z-rb4" name="displayPatternValue3" keyPath="representedObject.lastFlightDestination" previousBinding="8oV-BP-R4S" id="a8R-T3-PbT">
+                            <dictionary key="options">
+                                <string key="NSDisplayPattern">Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)</string>
+                            </dictionary>
+                        </binding>
+                        <binding destination="1We-5z-rb4" name="displayPatternValue4" keyPath="representedObject.lastFlightDuration" previousBinding="a8R-T3-PbT" id="X9U-MP-li0">
+                            <dictionary key="options">
+                                <string key="NSDisplayPattern">Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)</string>
+                            </dictionary>
+                        </binding>
+                        <binding destination="1We-5z-rb4" name="displayPatternValue2" keyPath="representedObject.lastFlightOrigin" previousBinding="7aP-YO-FL6" id="8oV-BP-R4S">
+                            <dictionary key="options">
+                                <string key="NSDisplayPattern">Last flight: %{value1}@, %{value2}@→%{value3}@ (%{value4}@ hr)</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Roi-ne-ufT">
+                    <rect key="frame" x="284" y="45" width="66" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="Xwp-Fm-Imh"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Restore" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ou5-le-JUe">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="restoreFromBackup:" target="1We-5z-rb4" id="ho6-ZL-Jpd"/>
+                        <binding destination="1We-5z-rb4" name="enabled" keyPath="downloadRequest" id="XKZ-X3-QV2">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hMK-hR-Rk6">
+                    <rect key="frame" x="47" y="53" width="236" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="File Size" id="A0J-LF-x4O">
+                        <byteCountFormatter key="formatter" id="elA-nI-XiE"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="1We-5z-rb4" name="value" keyPath="representedObject.logbookFileSize" id="adl-jK-bmO"/>
+                    </connections>
+                </textField>
+                <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="izp-YT-gJR">
+                    <rect key="frame" x="5" y="4" width="340" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <binding destination="1We-5z-rb4" name="hidden" keyPath="downloadRequest" id="Gyj-Cs-Enj">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNil</string>
+                            </dictionary>
+                        </binding>
+                        <binding destination="1We-5z-rb4" name="maxValue" keyPath="downloadRequest.contentLength" id="bNp-qP-peq"/>
+                        <binding destination="1We-5z-rb4" name="value" keyPath="downloadRequest.totalBytesRead" previousBinding="bNp-qP-peq" id="Sue-Wq-EZD"/>
+                    </connections>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ztu-Gw-LlA" secondAttribute="trailing" constant="5" id="66S-DW-eO9"/>
+                <constraint firstItem="y5Z-kX-eLl" firstAttribute="top" secondItem="jer-FP-fNU" secondAttribute="top" constant="5" id="BOO-Y3-cWF"/>
+                <constraint firstItem="Roi-ne-ufT" firstAttribute="baseline" secondItem="y5Z-kX-eLl" secondAttribute="baseline" id="Dtf-Dy-1kE"/>
+                <constraint firstItem="Roi-ne-ufT" firstAttribute="leading" secondItem="hMK-hR-Rk6" secondAttribute="trailing" constant="8" symbolic="YES" id="Ezb-Ng-hRR"/>
+                <constraint firstItem="ab4-pA-Xpn" firstAttribute="leading" secondItem="jer-FP-fNU" secondAttribute="leading" constant="5" id="LME-iY-CM7"/>
+                <constraint firstAttribute="trailing" secondItem="Roi-ne-ufT" secondAttribute="trailing" constant="5" id="Ofq-65-Wff"/>
+                <constraint firstItem="Roi-ne-ufT" firstAttribute="baseline" secondItem="hMK-hR-Rk6" secondAttribute="baseline" id="QA3-j1-BJw"/>
+                <constraint firstItem="hMK-hR-Rk6" firstAttribute="leading" secondItem="y5Z-kX-eLl" secondAttribute="trailing" constant="8" symbolic="YES" id="RWj-Sl-vnF"/>
+                <constraint firstItem="izp-YT-gJR" firstAttribute="leading" secondItem="jer-FP-fNU" secondAttribute="leading" constant="5" id="WDS-H6-wwd"/>
+                <constraint firstItem="aKU-HD-pVb" firstAttribute="top" secondItem="ab4-pA-Xpn" secondAttribute="bottom" constant="8" symbolic="YES" id="WpI-E9-AbF"/>
+                <constraint firstAttribute="bottom" secondItem="izp-YT-gJR" secondAttribute="bottom" constant="5" id="aZz-gg-EMj"/>
+                <constraint firstAttribute="bottom" secondItem="aKU-HD-pVb" secondAttribute="bottom" constant="5" id="cUE-Cg-Bkb"/>
+                <constraint firstItem="aKU-HD-pVb" firstAttribute="leading" secondItem="jer-FP-fNU" secondAttribute="leading" constant="5" id="f3q-nM-F3o"/>
+                <constraint firstAttribute="trailing" secondItem="aKU-HD-pVb" secondAttribute="trailing" constant="5" id="hxu-T2-oXE"/>
+                <constraint firstItem="ztu-Gw-LlA" firstAttribute="leading" secondItem="ab4-pA-Xpn" secondAttribute="trailing" constant="8" id="ms3-s1-WBk"/>
+                <constraint firstItem="ab4-pA-Xpn" firstAttribute="top" secondItem="y5Z-kX-eLl" secondAttribute="bottom" constant="8" symbolic="YES" id="nVT-TH-nrT"/>
+                <constraint firstItem="y5Z-kX-eLl" firstAttribute="leading" secondItem="jer-FP-fNU" secondAttribute="leading" constant="5" id="orq-Iy-MEH"/>
+                <constraint firstItem="ab4-pA-Xpn" firstAttribute="baseline" secondItem="ztu-Gw-LlA" secondAttribute="baseline" id="p0Y-sR-jfn"/>
+                <constraint firstAttribute="trailing" secondItem="izp-YT-gJR" secondAttribute="trailing" constant="5" id="tQ3-lQ-FGG"/>
+                <constraint firstItem="ab4-pA-Xpn" firstAttribute="width" secondItem="ztu-Gw-LlA" secondAttribute="width" id="ySl-Kw-e5n"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
