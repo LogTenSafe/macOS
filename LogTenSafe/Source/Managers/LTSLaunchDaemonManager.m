@@ -42,6 +42,9 @@ static LTSLaunchDaemonManager *sharedManager = nil;
         launchPlist[@"ProgramArguments"][0] = [self executablePath];
         [launchPlist writeToFile:launchPlistPath atomically:NO];
         
+        // update disabled
+        self.disabled = [launchPlist[@"Disabled"] boolValue];
+
         // watch disabled for changes
         [self addObserver:self forKeyPath:@"disabled" options:NSKeyValueObservingOptionNew context:nil];
     }

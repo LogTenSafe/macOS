@@ -19,6 +19,8 @@
     [self addObserver:self forKeyPath:@"backupAutomatically" options:NSKeyValueObservingOptionNew context:nil];
     // kick off window resizing
     [self windowDidResize:nil];
+    // preset backupAutomatically
+    self.backupAutomatically = ![LTSLaunchDaemonManager sharedManager].disabled;
 }
 
 - (void) dealloc {
