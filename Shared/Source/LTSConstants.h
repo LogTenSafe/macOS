@@ -40,3 +40,11 @@ extern NSString *LTSUserDefaultKeyLogin;
  */
 
 extern NSString *LTSUserDefaultKeyPassword;
+
+#pragma mark Launch daemon
+
+/*!
+ @brief The launchctl identifier for the CheckLogbookForChanges daemon.
+ */
+
+extern NSString *LTSLaunchDaemonIdentifier;

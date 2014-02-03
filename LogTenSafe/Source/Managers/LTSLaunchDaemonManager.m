@@ -7,6 +7,8 @@ static LTSLaunchDaemonManager *sharedManager = nil;
 - (NSString *) launchAgentsDirectory;
 - (void) createLauchPlist;
 - (NSString *) executablePath;
+- (void) toggleLaunchAgent:(BOOL)enabled;
+- (BOOL) launchAgentEnabled;
 
 @end
 
@@ -43,7 +45,7 @@ static LTSLaunchDaemonManager *sharedManager = nil;
         [launchPlist writeToFile:launchPlistPath atomically:NO];
         
         // update disabled
-        self.disabled = [launchPlist[@"Disabled"] boolValue];
+        self.disabled = ![self launchAgentEnabled];
 
         // watch disabled for changes
         [self addObserver:self forKeyPath:@"disabled" options:NSKeyValueObservingOptionNew context:nil];
@@ -63,10 +65,8 @@ static LTSLaunchDaemonManager *sharedManager = nil;
 }
 
 - (void) createLauchPlist {
-    NSDictionary *settings = @{@"Disabled": @(true),
-                               @"Label": @"info.timothymorgan.LogTenSafe",
+    NSDictionary *settings = @{@"Label": LTSLaunchDaemonIdentifier,
                                @"ProgramArguments": @[[self executablePath]],
-                               @"RunAtLoad": @(false),
                                @"StartInterval": @(1800)};
     [settings writeToFile:launchPlistPath atomically:NO];
 
@@ -79,12 +79,29 @@ static LTSLaunchDaemonManager *sharedManager = nil;
             stringByAppendingPathComponent:@"CheckLogbookForChanges"];
 }
 
+- (void) toggleLaunchAgent:(BOOL)enabled {
+	NSMutableArray *arguments = [[NSMutableArray alloc] initWithCapacity:3];
+	if (enabled) [arguments addObject:@"load"];
+	else [arguments addObject:@"unload"];
+	[arguments addObject:@"-w"];
+	[arguments addObject:launchPlistPath];
+
+	NSTask *task = [NSTask launchedTaskWithLaunchPath:@"/bin/launchctl" arguments:arguments];
+    [task waitUntilExit];
+}
+
+- (BOOL) launchAgentEnabled {
+    NSTask *task = [NSTask launchedTaskWithLaunchPath:@"/bin/launchctl" arguments:@[@"list", LTSLaunchDaemonIdentifier]];
+    [task waitUntilExit];
+
+    return !task.terminationStatus;
+}
+
 #pragma mark NSKeyValueObserving
 
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:@"disabled"]) {
-        launchPlist[@"Disabled"] = @(self.disabled);
-        [launchPlist writeToFile:launchPlistPath atomically:NO];
+        [self toggleLaunchAgent:!self.disabled];
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }

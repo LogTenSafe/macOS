@@ -8,3 +8,7 @@ NSString *LTSErrorDomain = @"LTSErrorDomain";
 
 NSString *LTSUserDefaultKeyLogin = @"LTSUserDefaultKeyLogin";
 NSString *LTSUserDefaultKeyPassword = @"LTSUserDefaultKeyPassword";
+
+#pragma mark Launch daemon
+
+NSString *LTSLaunchDaemonIdentifier = @"info.timothymorgan.LogTenSafe";

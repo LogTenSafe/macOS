@@ -16,11 +16,12 @@
 
 - (void) awakeFromNib {
     [self.backupsArrayController bind:@"contentArray" toObject:[LTSBackupsManager sharedManager] withKeyPath:@"backups" options:nil];
-    [self addObserver:self forKeyPath:@"backupAutomatically" options:NSKeyValueObservingOptionNew context:nil];
     // kick off window resizing
     [self windowDidResize:nil];
     // preset backupAutomatically
     self.backupAutomatically = ![LTSLaunchDaemonManager sharedManager].disabled;
+    // and observe it
+    [self addObserver:self forKeyPath:@"backupAutomatically" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void) dealloc {
