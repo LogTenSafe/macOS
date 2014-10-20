@@ -29,4 +29,8 @@
     [alert runModal];
 }
 
+- (IBAction) refreshList:(id)sender {
+    [self.windowController reloadBackups:sender];
+}
+
 @end

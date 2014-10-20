@@ -618,6 +618,13 @@
                 <menuItem title="Window" id="19">
                     <menu key="submenu" title="Window" systemMenu="window" id="24">
                         <items>
+                            <menuItem title="Refresh List" id="Gy8-qg-Bp0">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="refreshList:" target="494" id="eUS-dC-Jqs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="gnb-dK-Obw"/>
                             <menuItem title="Minimize" keyEquivalent="m" id="23">
                                 <connections>
                                     <action selector="performMiniaturize:" target="-1" id="37"/>
