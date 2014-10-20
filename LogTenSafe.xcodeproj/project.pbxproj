@@ -868,6 +868,11 @@
 				CLASSPREFIX = LTS;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tim Morgan";
+				TargetAttributes = {
+					01F42FFA18965A7100E7090C = {
+						DevelopmentTeam = 2NFSK2WB24;
+					};
+				};
 			};
 			buildConfigurationList = 01F42FF618965A7100E7090C /* Build configuration list for PBXProject "LogTenSafe" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1183,6 +1188,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTenSafe/Source/LogTenSafe-Prefix.pch";
@@ -1196,6 +1202,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTenSafe/Source/LogTenSafe-Prefix.pch";
