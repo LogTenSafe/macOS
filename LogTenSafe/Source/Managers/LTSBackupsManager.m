@@ -5,6 +5,7 @@ static LTSBackupsManager *sharedManager = nil;
 @interface LTSBackupsManager ()
 
 - (NSString *) LogTenDataPath;
+- (NSString *) LogTenXDataPath;
 
 @end
 
@@ -28,7 +29,7 @@ static LTSBackupsManager *sharedManager = nil;
 #pragma mark Logbook operations
 
 - (void) reloadWithErrorHandler:(void (^)(NSError *))errorHandler {
-    [[LTSNetworkManager sharedManager] loadBackupsListAnd:^(NSData *data){
+    [[LTSNetworkManager sharedManager] loadBackupsListAnd:^(NSData *data) {
         NSError *error = nil;
         NSArray *backupsData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
         if (error) {
@@ -52,7 +53,13 @@ static LTSBackupsManager *sharedManager = nil;
 }
 
 - (ASIHTTPRequest *) addBackupWithErrorHandler:(void (^)(NSError *))errorHandler {
-    if (![[NSFileManager defaultManager] fileExistsAtPath:[self LogTenDataPath]]) {
+    NSString *path = nil;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[self LogTenXDataPath]])
+        path = [self LogTenXDataPath];
+    else if ([[NSFileManager defaultManager] fileExistsAtPath:[self LogTenDataPath]])
+        path = [self LogTenDataPath];
+
+    if (!path) {
         NSError *error = [NSError errorWithDomain:LTSErrorDomain
                                              code:LTSErrorCodeCantReadLogbook
                                          userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"Couldn’t find your LogTen Pro logbook.", nil),
@@ -61,7 +68,7 @@ static LTSBackupsManager *sharedManager = nil;
         return nil;
     }
     
-    return [[LTSNetworkManager sharedManager] addBackup:[self LogTenDataPath]
+    return [[LTSNetworkManager sharedManager] addBackup:path
                                               onSuccess:^{
                                                   [self reloadWithErrorHandler:nil];
                                               }
@@ -71,8 +78,14 @@ static LTSBackupsManager *sharedManager = nil;
 - (LTSBackupResult) restoreLogbook:(NSData *)logbookData outError:(NSError **)outError {
     LTSBackupResult result = LTSBackupResultCreate;
     
+    NSString *path = nil;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[self LogTenXDataPath]])
+        path = [self LogTenXDataPath];
+    else if ([[NSFileManager defaultManager] fileExistsAtPath:[self LogTenDataPath]])
+        path = [self LogTenDataPath];
+    
     // back up previous logbook
-    if ([[NSFileManager defaultManager] fileExistsAtPath:[self LogTenDataPath]]) {
+    if (path) {
         result = LTSBackupResultOverwrite;
         
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -83,7 +96,7 @@ static LTSBackupsManager *sharedManager = nil;
         backupPath = [backupPath stringByAppendingPathComponent:filename];
         
         NSError *error = nil;
-        [[NSFileManager defaultManager] moveItemAtPath:[self LogTenDataPath] toPath:backupPath error:&error];
+        [[NSFileManager defaultManager] moveItemAtPath:path toPath:backupPath error:&error];
         if (error) {
             if (outError) *outError = error;
             return LTSBackupResultFailure;
@@ -91,7 +104,7 @@ static LTSBackupsManager *sharedManager = nil;
     }
     
     NSError *error = nil;
-    [logbookData writeToFile:[self LogTenDataPath] options:0 error:&error];
+    [logbookData writeToFile:path options:0 error:&error];
     if (error) {
         if (outError) *outError = error;
         return LTSBackupResultFailure;
@@ -105,6 +118,11 @@ static LTSBackupsManager *sharedManager = nil;
 - (NSString *) LogTenDataPath {
     NSString *libraryDirectory = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0];
     return [libraryDirectory stringByAppendingPathComponent:@"Containers/com.coradine.LogTenPro6/Data/Documents/LogTenProData/LogTenCoreDataStore.sql"];
+}
+
+- (NSString *) LogTenXDataPath {
+    NSString *libraryDirectory = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0];
+    return [libraryDirectory stringByAppendingPathComponent:@"Containers/com.coradine.LogTenProX/Data/Documents/LogTenProData/LogTenCoreDataStore.sql"];
 }
 
 @end

@@ -15,7 +15,6 @@ static LTSNetworkManager *sharedManager = nil;
 #pragma mark Private methods
 
 - (BOOL) credentialsProvided;
-- (void) makeRequest:(NSURL *)URL then:(void (^)(ASIHTTPRequest *request))then onError:(void (^)(NSError *))errorHandler;
 - (NSString *) defaultConstantsPlistPath;
 
 @end
@@ -59,10 +58,6 @@ static LTSNetworkManager *sharedManager = nil;
 - (void) loadBackupsListAnd:(void (^)(NSData *))successHandler onError:(void (^)(NSError *))errorHandler {
     NSURL *loadURL = [[NSURL alloc] initWithString:self.constants[@"URLBase"]];
     loadURL = [loadURL URLByAppendingPathComponent:self.constants[@"BackupsPath"]];
-    
-    [self makeRequest:loadURL then:^(ASIHTTPRequest *request){
-        if (successHandler) successHandler(request.responseData);
-    } onError:errorHandler];
     
     ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:loadURL];
     request.username = self.login;
@@ -227,11 +222,6 @@ static LTSNetworkManager *sharedManager = nil;
 
 - (NSString *) defaultConstantsPlistPath {
     return [[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"];
-}
-
-- (void) makeRequest:(NSURL *)URL then:(void (^)(ASIHTTPRequest *request))then onError:(void (^)(NSError *))errorHandler {
-    
-
 }
 
 @end
