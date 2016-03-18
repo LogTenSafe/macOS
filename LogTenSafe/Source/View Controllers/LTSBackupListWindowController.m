@@ -50,14 +50,16 @@
         NSAlert *alert = [NSAlert alertWithError:error];
         [alert beginSheetModalForWindow:self.window completionHandler:nil];
     }];
-    
-    self.progressWindowController = [[LTSProgressWindowController alloc] initWithWindowNibName:@"ProgressWindow"];
-    self.progressWindowController.request = request;
-    self.progressWindowController.prompt = NSLocalizedString(@"Sending logbook data to server…", nil);
-    self.progressWindowController.parent = self;
-    [self.window beginSheet:self.progressWindowController.window completionHandler:^(NSModalResponse response) {
-        self.progressWindowController = nil;
-    }];
+
+    if (request) {
+        self.progressWindowController = [[LTSProgressWindowController alloc] initWithWindowNibName:@"ProgressWindow"];
+        self.progressWindowController.request = request;
+        self.progressWindowController.prompt = NSLocalizedString(@"Sending logbook data to server…", nil);
+        self.progressWindowController.parent = self;
+        [self.window beginSheet:self.progressWindowController.window completionHandler:^(NSModalResponse response) {
+            self.progressWindowController = nil;
+        }];
+    }
 }
 
 #pragma mark Private methods
