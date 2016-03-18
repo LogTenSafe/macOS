@@ -27,6 +27,7 @@
     alert.messageText = NSLocalizedString(@"You have been logged out.", nil);
     [alert addButtonWithTitle:@"OK"];
     [alert runModal];
+    [NSApp terminate:nil];
 }
 
 - (IBAction) refreshList:(id)sender {
