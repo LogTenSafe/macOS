@@ -1,6 +1,6 @@
 #import "LTSNetworkManager.h"
-#import "ASIHTTPRequest.h" // no idea why this is necessary; it's in prefix headers
-#import "ASIFormDataRequest.h"
+#import <ASIHTTPRequest/ASIHTTPRequest.h>
+#import <ASIHTTPRequest/ASIFormDataRequest.h>
 
 static LTSNetworkManager *sharedManager = nil;
 
