@@ -13,6 +13,17 @@ information.
 Documentation is available using Doxygen. Run `doxygen` in the project directory
 to generate HTML document to the `Documentation/html` directory.
 
+
+Getting Started
+---------------
+
+This project uses CocoaPods. Make sure you have CocoaPods set up by following
+the instructions at https://cocoapods.org, then run `pod install` to verify all
+dependencies are installed.
+
+To run this project, open the LogTenSafe.xcworkspace file, _not_ the Xcode
+project. This is a CocoaPods requirement.
+
 Architecture
 ------------
 
