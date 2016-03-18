@@ -68,6 +68,7 @@
     self.loginSheetController = [[LTSLoginSheetWindowController alloc] initWithWindowNibName:@"LoginWindow"];
     self.loginSheetController.parent = self.window;
     [self.window beginSheet:self.loginSheetController.window completionHandler:^(NSModalResponse response) {
+        [[NSUserDefaults standardUserDefaults] synchronize];
         self.loginSheetController = nil;
         if (response == NSModalResponseOK) then();
         else [NSApp terminate:nil];
