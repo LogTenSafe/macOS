@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>URLBase</key>
-	<string>http://logtensafe.com</string>
+	<string>https://www.logtensafe.com</string>
 	<key>BackupsPath</key>
 	<string>/backups.json</string>
 	<key>LoginPath</key>
