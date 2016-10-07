@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F5FDB459-A3E8-4F23-B142-8FDC7F00FCE8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "5B3556FB8248CCA3CA7E0BABA70D4DCA77C32341" : "MacOSX\/",
+    "5B3556FB8248CCA3CA7E0BABA70D4DCA77C32341" : "LogTenSafe\/",
     "FAF40D7FD305BB7D5BE5F87AE969BD7D31922D57" : "MacOSX\/Vendor\/ASIHTTPRequest\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "LogTenSafe",
