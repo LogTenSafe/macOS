@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
         
         // allow user to provide path to Constants.plist (for testing)
         if (argc == 2) {
-            NSString *plistPath = [NSString stringWithCString:argv[1] encoding:NSASCIIStringEncoding];
+            NSString *plistPath = @(argv[1]);
             [LTSNetworkManager sharedManager].constantsPlistPath = plistPath;
         }
         

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="LTSBackupListWindowController">
@@ -36,10 +37,9 @@
         </collectionViewItem>
         <window title="LogTenSafe" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="4vm-4k-emT">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="570" height="674"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-            <value key="minSize" type="size" width="640" height="310"/>
+            <rect key="contentRect" x="496" y="127" width="570" height="674"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="570" height="310"/>
             <view key="contentView" id="ahV-uc-qk7">
                 <rect key="frame" x="0.0" y="0.0" width="570" height="674"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -65,7 +65,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="329" translatesAutoresizingMaskIntoConstraints="NO" id="oKG-Hz-KLT">
-                        <rect key="frame" x="37" y="601" width="328" height="28"/>
+                        <rect key="frame" x="37" y="601" width="332" height="28"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="New backups will only be added if your logbook has changed since the last time it was backed up." id="oKZ-8W-DSd">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -74,11 +74,11 @@
                     </textField>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncx-dx-3eZ">
                         <rect key="frame" x="0.0" y="0.0" width="570" height="593"/>
-                        <clipView key="contentView" id="YnY-Zl-QqA">
+                        <clipView key="contentView" drawsBackground="NO" id="YnY-Zl-QqA">
                             <rect key="frame" x="1" y="1" width="568" height="591"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <collectionView selectable="YES" maxNumberOfColumns="1" id="eo0-Kj-UoH">
+                                <collectionView selectable="YES" id="eo0-Kj-UoH">
                                     <rect key="frame" x="0.0" y="0.0" width="568" height="591"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -102,16 +102,18 @@
                     </scrollView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="Ncx-dx-3eZ" secondAttribute="bottom" id="0qj-Bt-Ymw"/>
-                    <constraint firstItem="oKG-Hz-KLT" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" constant="39" id="1R6-V3-cQ4"/>
-                    <constraint firstItem="Ncx-dx-3eZ" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" id="873-Bm-HaP"/>
-                    <constraint firstAttribute="trailing" secondItem="0gr-eg-eM9" secondAttribute="trailing" constant="20" symbolic="YES" id="HIB-NQ-htj"/>
-                    <constraint firstItem="Ncx-dx-3eZ" firstAttribute="top" secondItem="oKG-Hz-KLT" secondAttribute="bottom" constant="8" symbolic="YES" id="LcU-nM-e6z"/>
-                    <constraint firstItem="0gr-eg-eM9" firstAttribute="top" secondItem="ahV-uc-qk7" secondAttribute="top" constant="20" symbolic="YES" id="PXg-II-URA"/>
-                    <constraint firstItem="0gr-eg-eM9" firstAttribute="baseline" secondItem="XZA-yI-3xS" secondAttribute="baseline" id="eMV-7U-4u6"/>
-                    <constraint firstItem="oKG-Hz-KLT" firstAttribute="top" secondItem="XZA-yI-3xS" secondAttribute="bottom" constant="8" symbolic="YES" id="ias-EM-hbf"/>
-                    <constraint firstAttribute="trailing" secondItem="Ncx-dx-3eZ" secondAttribute="trailing" id="jLM-Ts-uzF"/>
-                    <constraint firstItem="XZA-yI-3xS" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" constant="20" symbolic="YES" id="laI-h9-aEI"/>
+                    <constraint firstItem="0gr-eg-eM9" firstAttribute="top" secondItem="ahV-uc-qk7" secondAttribute="top" constant="20" id="4CH-wQ-WKw"/>
+                    <constraint firstItem="0gr-eg-eM9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XZA-yI-3xS" secondAttribute="trailing" constant="20" id="JRV-3a-je6"/>
+                    <constraint firstItem="oKG-Hz-KLT" firstAttribute="top" secondItem="XZA-yI-3xS" secondAttribute="bottom" constant="8" id="NhE-LX-iKg"/>
+                    <constraint firstItem="Ncx-dx-3eZ" firstAttribute="top" secondItem="oKG-Hz-KLT" secondAttribute="bottom" constant="8" id="O94-3P-Jo5"/>
+                    <constraint firstItem="oKG-Hz-KLT" firstAttribute="trailing" secondItem="XZA-yI-3xS" secondAttribute="trailing" id="Sp8-Gw-rQ4"/>
+                    <constraint firstItem="oKG-Hz-KLT" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" constant="39" id="VRa-2X-ir3"/>
+                    <constraint firstItem="XZA-yI-3xS" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" constant="20" id="WKX-iz-Pr9"/>
+                    <constraint firstAttribute="trailing" secondItem="0gr-eg-eM9" secondAttribute="trailing" constant="20" id="Y0Z-cx-4f3"/>
+                    <constraint firstAttribute="bottom" secondItem="Ncx-dx-3eZ" secondAttribute="bottom" id="dg4-Qg-Ux4"/>
+                    <constraint firstItem="XZA-yI-3xS" firstAttribute="top" secondItem="ahV-uc-qk7" secondAttribute="top" constant="23" id="kWd-a8-LRZ"/>
+                    <constraint firstItem="Ncx-dx-3eZ" firstAttribute="leading" secondItem="ahV-uc-qk7" secondAttribute="leading" id="lEk-IF-zbU"/>
+                    <constraint firstAttribute="trailing" secondItem="Ncx-dx-3eZ" secondAttribute="trailing" id="y9P-ol-lNo"/>
                 </constraints>
             </view>
             <connections>
@@ -201,9 +203,9 @@
                     </connections>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Roi-ne-ufT">
-                    <rect key="frame" x="284" y="45" width="66" height="28"/>
+                    <rect key="frame" x="283" y="45" width="67" height="28"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="56" id="Xwp-Fm-Imh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="Xwp-Fm-Imh"/>
                     </constraints>
                     <buttonCell key="cell" type="push" title="Restore" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ou5-le-JUe">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -219,7 +221,7 @@
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hMK-hR-Rk6">
-                    <rect key="frame" x="46" y="53" width="237" height="14"/>
+                    <rect key="frame" x="46" y="53" width="236" height="14"/>
                     <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="File Size" id="A0J-LF-x4O">
                         <byteCountFormatter key="formatter" id="elA-nI-XiE"/>
                         <font key="font" metaFont="smallSystem"/>

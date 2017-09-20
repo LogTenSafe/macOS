@@ -14,7 +14,7 @@ static LTSNetworkManager *sharedManager = nil;
 
 #pragma mark Private methods
 
-- (BOOL) credentialsProvided;
+@property (NS_NONATOMIC_IOSONLY, readonly) BOOL credentialsProvided;
 - (NSString *) defaultConstantsPlistPath;
 
 @end
@@ -44,7 +44,7 @@ static LTSNetworkManager *sharedManager = nil;
 
 #pragma mark Initialization
 
-- (id) init {
+- (instancetype) init {
     self = [super init];
     if (self) {
         self.constantsPlistPath = [self defaultConstantsPlistPath];
@@ -104,7 +104,7 @@ static LTSNetworkManager *sharedManager = nil;
     ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:backupURL];
     request.username = self.login;
     request.password = self.password;
-    [request setPostValue:[[NSHost currentHost] localizedName] forKey:@"backup[hostname]"];
+    [request setPostValue:[NSHost currentHost].localizedName forKey:@"backup[hostname]"];
     [request setFile:backupPath forKey:@"backup[logbook]"];
     
     __weak typeof(request) weakRequest = request;

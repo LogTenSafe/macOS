@@ -4,7 +4,7 @@
 
 #pragma mark Initialization and deallocation
 
-- (id) initWithWindow:(NSWindow *)window {
+- (instancetype) initWithWindow:(NSWindow *)window {
     if (self = [super initWithWindow:window]) {
         [self addObserver:self forKeyPath:@"request" options:NSKeyValueObservingOptionNew context:nil];
     }

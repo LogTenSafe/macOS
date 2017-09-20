@@ -9,7 +9,7 @@
 - (NSDateFormatter *) dateFormatter {
     if (!_dateFormatter) {
         _dateFormatter = [[NSDateFormatter alloc] init];
-        [_dateFormatter setDateStyle:self.style];
+        _dateFormatter.dateStyle = self.style;
     }
     
     return _dateFormatter;

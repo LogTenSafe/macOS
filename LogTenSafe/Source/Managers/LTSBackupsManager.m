@@ -4,8 +4,8 @@ static LTSBackupsManager *sharedManager = nil;
 
 @interface LTSBackupsManager ()
 
-- (NSString *) LogTenDataPath;
-- (NSString *) LogTenXDataPath;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *LogTenDataPath;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *LogTenXDataPath;
 
 @end
 
@@ -41,7 +41,7 @@ static LTSBackupsManager *sharedManager = nil;
             return;
         }
         
-        NSMutableArray *backups = [[NSMutableArray alloc] initWithCapacity:[backupsData count]];
+        NSMutableArray *backups = [[NSMutableArray alloc] initWithCapacity:backupsData.count];
         for (NSDictionary *backupData in backupsData) {
             LTSBackup *backup = [[LTSBackup alloc] initFromJSON:backupData];
             [backups addObject:backup];

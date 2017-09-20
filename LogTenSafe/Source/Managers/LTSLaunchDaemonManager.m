@@ -4,11 +4,11 @@ static LTSLaunchDaemonManager *sharedManager = nil;
 
 @interface LTSLaunchDaemonManager ()
 
-- (NSString *) launchAgentsDirectory;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *launchAgentsDirectory;
 - (void) createLauchPlist;
-- (NSString *) executablePath;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *executablePath;
 - (void) toggleLaunchAgent:(BOOL)enabled;
-- (BOOL) launchAgentEnabled;
+@property (NS_NONATOMIC_IOSONLY, readonly) BOOL launchAgentEnabled;
 
 @end
 
@@ -31,7 +31,7 @@ static LTSLaunchDaemonManager *sharedManager = nil;
 
 #pragma mark Initialization and deallocation
 
-- (id) init {
+- (instancetype) init {
     if (self = [super init]) {
         // load or create plist
         launchPlistPath = [[self launchAgentsDirectory] stringByAppendingPathComponent:@"info.timothymorgan.LogTenSafe.plist"];
@@ -74,19 +74,19 @@ static LTSLaunchDaemonManager *sharedManager = nil;
 
 - (NSString *) executablePath {
     NSString *ownPath = [NSBundle mainBundle].resourcePath;
-    return [[[ownPath stringByDeletingLastPathComponent]
+    return [[ownPath.stringByDeletingLastPathComponent
              stringByAppendingPathComponent:@"Resources"]
             stringByAppendingPathComponent:@"CheckLogbookForChanges"];
 }
 
 - (void) toggleLaunchAgent:(BOOL)enabled {
-	NSMutableArray *arguments = [[NSMutableArray alloc] initWithCapacity:3];
-	if (enabled) [arguments addObject:@"load"];
-	else [arguments addObject:@"unload"];
-	[arguments addObject:@"-w"];
-	[arguments addObject:launchPlistPath];
+    NSMutableArray *arguments = [[NSMutableArray alloc] initWithCapacity:3];
+    if (enabled) [arguments addObject:@"load"];
+    else [arguments addObject:@"unload"];
+    [arguments addObject:@"-w"];
+    [arguments addObject:launchPlistPath];
 
-	NSTask *task = [NSTask launchedTaskWithLaunchPath:@"/bin/launchctl" arguments:arguments];
+    NSTask *task = [NSTask launchedTaskWithLaunchPath:@"/bin/launchctl" arguments:arguments];
     [task waitUntilExit];
 }
 

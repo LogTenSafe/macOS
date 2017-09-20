@@ -22,6 +22,6 @@
  @return The compressed data.
  */
 
-- (NSData *) gzipDeflate;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSData *gzipDeflate;
 
 @end

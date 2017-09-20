@@ -4,7 +4,7 @@
 
 @interface LTSBackupListWindowController ()
 
-- (void) requestAuthenticationThen:(void (^)())then;
+- (void) requestAuthenticationThen:(void (^)(void))then;
 
 @end
 
@@ -64,7 +64,7 @@
 
 #pragma mark Private methods
 
-- (void) requestAuthenticationThen:(void (^)())then {
+- (void) requestAuthenticationThen:(void (^)(void))then {
     if (self.loginSheetController) return;
     
     self.loginSheetController = [[LTSLoginSheetWindowController alloc] initWithWindowNibName:@"LoginWindow"];
@@ -80,10 +80,10 @@
 #pragma mark NSWindowDelegate
 
 - (void) windowDidResize:(NSNotification *)notification {
-    CGFloat width = [[self.collectionView enclosingScrollView] bounds].size.width - 2;
-    NSSize size = NSMakeSize(width, [self.collectionViewItemTemplate bounds].size.height);
-    [self.collectionView setMinItemSize:size];
-    [self.collectionView setMaxItemSize:size];
+    CGFloat width = (self.collectionView).enclosingScrollView.bounds.size.width - 2;
+    NSSize size = NSMakeSize(width, (self.collectionViewItemTemplate).bounds.size.height);
+    (self.collectionView).minItemSize = size;
+    (self.collectionView).maxItemSize = size;
 }
 
 #pragma mark NSKeyValueObserving

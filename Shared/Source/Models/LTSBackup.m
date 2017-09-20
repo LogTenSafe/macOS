@@ -7,13 +7,13 @@ static NSDateFormatter *dateOnlyFormatter;
 
 + (void) initialize {
     ISO8601Formatter = [[NSDateFormatter alloc] init];
-    [ISO8601Formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZZZ"];
+    ISO8601Formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSZZZ";
     
     dateOnlyFormatter = [[NSDateFormatter alloc] init];
-    [dateOnlyFormatter setDateFormat:@"yyyy-MM-dd"];
+    dateOnlyFormatter.dateFormat = @"yyyy-MM-dd";
 }
 
-- (id) initFromJSON:(id)json {
+- (instancetype) initFromJSON:(id)json {
     if (self = [super init]) {
         if (![json isKindOfClass:[NSDictionary class]]) {
             [[NSException exceptionWithName:@"LTSInvalidJSON"

@@ -69,6 +69,8 @@
 
 #pragma mark Initialization
 
+- (instancetype) init NS_UNAVAILABLE;
+
 /*!
  @brief Creates a new backup record from its JSON representation.
  
@@ -77,6 +79,6 @@
  @return The initialized record.
  */
 
-- (id) initFromJSON:(id)json;
+- (instancetype) initFromJSON:(id)json NS_DESIGNATED_INITIALIZER;
 
 @end
