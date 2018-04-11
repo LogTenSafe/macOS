@@ -17,7 +17,6 @@
 		01E72B38189F113700437C3B /* LTSBackupsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E72B1F189F10F500437C3B /* LTSBackupsManager.m */; };
 		01E72B39189F113700437C3B /* LTSLaunchDaemonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E72B21189F10F500437C3B /* LTSLaunchDaemonManager.m */; };
 		01E72B3A189F113700437C3B /* LTSDateValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E72B24189F10F500437C3B /* LTSDateValueTransformer.m */; };
-		01E72B3B189F113700437C3B /* LTSBackupCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E72B27189F10F500437C3B /* LTSBackupCollectionViewItem.m */; };
 		01E72B3C189F113700437C3B /* LTSBackupListWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E72B29189F10F500437C3B /* LTSBackupListWindowController.m */; };
 		01E72B3D189F113700437C3B /* LTSLoginSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E72B2B189F10F500437C3B /* LTSLoginSheetWindowController.m */; };
 		01E72B3E189F113700437C3B /* LTSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E72B2F189F10F500437C3B /* LTSConstants.m */; };
@@ -43,6 +42,7 @@
 		01F9007C1897904800A0A328 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F9007B1897904800A0A328 /* SystemConfiguration.framework */; };
 		01F9007E1897904D00A0A328 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F9007D1897904D00A0A328 /* libxml2.dylib */; };
 		01F900801897905100A0A328 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F9007F1897905100A0A328 /* libz.dylib */; };
+		221B1AB51F71FCC6000E975E /* LTSBackupCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 221B1AB31F71FCC6000E975E /* LTSBackupCollectionViewItem.m */; };
 		675F1561945C52EEC5DD5DE6 /* libPods-LogTenSafe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0935FC3D485178E3FC97BBB3 /* libPods-LogTenSafe.a */; };
 		81A39C95B3E1925C42FD2AF4 /* libPods-CheckLogbookForChanges.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28392AF9910FA0E8C14B2329 /* libPods-CheckLogbookForChanges.a */; };
 /* End PBXBuildFile section */
@@ -96,8 +96,6 @@
 		01E72B21189F10F500437C3B /* LTSLaunchDaemonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSLaunchDaemonManager.m; sourceTree = "<group>"; };
 		01E72B23189F10F500437C3B /* LTSDateValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSDateValueTransformer.h; sourceTree = "<group>"; };
 		01E72B24189F10F500437C3B /* LTSDateValueTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSDateValueTransformer.m; sourceTree = "<group>"; };
-		01E72B26189F10F500437C3B /* LTSBackupCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSBackupCollectionViewItem.h; sourceTree = "<group>"; };
-		01E72B27189F10F500437C3B /* LTSBackupCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSBackupCollectionViewItem.m; sourceTree = "<group>"; };
 		01E72B28189F10F500437C3B /* LTSBackupListWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSBackupListWindowController.h; sourceTree = "<group>"; };
 		01E72B29189F10F500437C3B /* LTSBackupListWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSBackupListWindowController.m; sourceTree = "<group>"; };
 		01E72B2A189F10F500437C3B /* LTSLoginSheetWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSLoginSheetWindowController.h; sourceTree = "<group>"; };
@@ -129,6 +127,8 @@
 		01F9007D1897904D00A0A328 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		01F9007F1897905100A0A328 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0935FC3D485178E3FC97BBB3 /* libPods-LogTenSafe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LogTenSafe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		221B1AB21F71FCC6000E975E /* LTSBackupCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSBackupCollectionViewItem.h; sourceTree = "<group>"; };
+		221B1AB31F71FCC6000E975E /* LTSBackupCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSBackupCollectionViewItem.m; sourceTree = "<group>"; };
 		28392AF9910FA0E8C14B2329 /* libPods-CheckLogbookForChanges.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckLogbookForChanges.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		364FA7739D0F3B9A20533C2B /* Pods-LogTenSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogTenSafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LogTenSafe/Pods-LogTenSafe.release.xcconfig"; sourceTree = "<group>"; };
 		3D6BFF35276B4E3F9EA68C78 /* Pods-LogTenSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogTenSafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LogTenSafe/Pods-LogTenSafe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,17 +168,9 @@
 		01E72AFA189F10F500437C3B /* CheckLogbookForChanges */ = {
 			isa = PBXGroup;
 			children = (
-				01E72AFB189F10F500437C3B /* Resources */,
 				01E72AFC189F10F500437C3B /* Source */,
 			);
 			path = CheckLogbookForChanges;
-			sourceTree = "<group>";
-		};
-		01E72AFB189F10F500437C3B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		01E72AFC189F10F500437C3B /* Source */ = {
@@ -231,6 +223,7 @@
 				01E72B59189F12FF00437C3B /* LogTenSafe-Prefix.pch */,
 				01E72B5A189F12FF00437C3B /* main.m */,
 				01E72B6A189F250600437C3B /* Categories */,
+				221B1AB71F7200D9000E975E /* Data Sources */,
 				01E72B1A189F10F500437C3B /* Delegates */,
 				01E72B1D189F10F500437C3B /* Managers */,
 				01E72B22189F10F500437C3B /* Value Transformers */,
@@ -271,14 +264,14 @@
 		01E72B25189F10F500437C3B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				01E72B26189F10F500437C3B /* LTSBackupCollectionViewItem.h */,
-				01E72B27189F10F500437C3B /* LTSBackupCollectionViewItem.m */,
 				01E72B28189F10F500437C3B /* LTSBackupListWindowController.h */,
 				01E72B29189F10F500437C3B /* LTSBackupListWindowController.m */,
 				01E72B2A189F10F500437C3B /* LTSLoginSheetWindowController.h */,
 				01E72B2B189F10F500437C3B /* LTSLoginSheetWindowController.m */,
 				01E72B5C189F13A100437C3B /* LTSProgressWindowController.h */,
 				01E72B5D189F13A100437C3B /* LTSProgressWindowController.m */,
+				221B1AB21F71FCC6000E975E /* LTSBackupCollectionViewItem.h */,
+				221B1AB31F71FCC6000E975E /* LTSBackupCollectionViewItem.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -380,6 +373,13 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		221B1AB71F7200D9000E975E /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
 		89CFA5B08224669DF0E9DAF1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,7 +402,6 @@
 				017EE250189E4877007F31A4 /* Sources */,
 				017EE251189E4877007F31A4 /* Frameworks */,
 				017EE252189E4877007F31A4 /* CopyFiles */,
-				955CDE05468473D5589A92B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,8 +420,6 @@
 				01F42FF718965A7100E7090C /* Sources */,
 				01F42FF818965A7100E7090C /* Frameworks */,
 				01F42FF918965A7100E7090C /* Resources */,
-				4BA75E29D7928126DF3D57D3 /* [CP] Embed Pods Frameworks */,
-				F9D186D054E02EE9D8863187 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,7 +438,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LTS;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Tim Morgan";
 				TargetAttributes = {
 					01F42FFA18965A7100E7090C = {
@@ -489,21 +486,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4BA75E29D7928126DF3D57D3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LogTenSafe/Pods-LogTenSafe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8352905BBEB1854B66675189 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,21 +504,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		955CDE05468473D5589A92B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckLogbookForChanges/Pods-CheckLogbookForChanges-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E64B2941ACB4F8B0B869A7AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,21 +520,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9D186D054E02EE9D8863187 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LogTenSafe/Pods-LogTenSafe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -590,11 +542,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E72B37189F113700437C3B /* LTSAppDelegate.m in Sources */,
+				221B1AB51F71FCC6000E975E /* LTSBackupCollectionViewItem.m in Sources */,
 				01E72B38189F113700437C3B /* LTSBackupsManager.m in Sources */,
 				01E72B39189F113700437C3B /* LTSLaunchDaemonManager.m in Sources */,
 				01E72B3A189F113700437C3B /* LTSDateValueTransformer.m in Sources */,
 				01E72B6D189F251F00437C3B /* NSData+LTSGZipping.m in Sources */,
-				01E72B3B189F113700437C3B /* LTSBackupCollectionViewItem.m in Sources */,
 				01E72B3C189F113700437C3B /* LTSBackupListWindowController.m in Sources */,
 				01E72B5B189F12FF00437C3B /* main.m in Sources */,
 				01E72B3D189F113700437C3B /* LTSLoginSheetWindowController.m in Sources */,
@@ -715,12 +667,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -765,12 +719,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

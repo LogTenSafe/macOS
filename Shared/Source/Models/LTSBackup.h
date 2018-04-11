@@ -56,12 +56,6 @@
 @property (assign) unsigned int logbookFileSize;
 
 /*!
- @brief The MD5 hash of this logbook's data.
- */
-
-@property (strong) NSString *logbookFingerprint;
-
-/*!
  @brief The URL where the logbook can be downloaded.
  */
 

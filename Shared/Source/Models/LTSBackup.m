@@ -20,16 +20,17 @@ static NSDateFormatter *dateOnlyFormatter;
                                      reason:@"The JSON description for a Backup was invalid."
                                    userInfo:@{@"json": json}] raise];
         }
+
+        if (json[@"last_flight"] == [NSNull null]) return nil;
         
         self.createdAt = [ISO8601Formatter dateFromString:json[@"created_at"]];
-        self.lastFlightDate = [dateOnlyFormatter dateFromString:json[@"last_flight_date"]];
+        self.lastFlightDate = [dateOnlyFormatter dateFromString:json[@"last_flight"][@"date"]];
         self.lastFlightOrigin = json[@"last_flight"][@"origin"];
         self.lastFlightDestination = json[@"last_flight"][@"destination"];
         self.lastFlightDuration = [json[@"last_flight"][@"duration"] floatValue];
         self.totalHours = [json[@"total_hours"] floatValue];
         self.hostname = json[@"hostname"];
         self.logbookFileSize = [json[@"logbook"][@"size"] floatValue];
-        self.logbookFingerprint = json[@"logbook"][@"fingerprint"];
         self.downloadURL = [[NSURL alloc] initWithString:json[@"download_url"]];
     }
     return self;
