@@ -25,7 +25,7 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:LTSUserDefaultKeyPassword];
     NSAlert *alert = [NSAlert new];
     alert.messageText = NSLocalizedString(@"You have been logged out.", nil);
-    [alert addButtonWithTitle:@"OK"];
+    [alert addButtonWithTitle:NSLocalizedString(@"OK", nil)];
     [alert runModal];
     [NSApp terminate:nil];
 }

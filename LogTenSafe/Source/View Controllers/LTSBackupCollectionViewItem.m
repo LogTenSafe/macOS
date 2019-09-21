@@ -70,7 +70,7 @@
     if (result == LTSBackupResultOverwrite) {
         alert.informativeText = NSLocalizedString(@"Your previous logbook has been saved to your Desktop in case anything went wrong.", nil);
     }
-    [alert addButtonWithTitle:@"OK"];
+    [alert addButtonWithTitle:NSLocalizedString(@"OK", nil)];
     [alert beginSheetModalForWindow:self.view.window completionHandler:nil];
 }
 
