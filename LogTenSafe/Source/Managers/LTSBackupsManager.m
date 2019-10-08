@@ -44,7 +44,7 @@ static LTSBackupsManager *sharedManager = nil;
         NSMutableArray *backups = [[NSMutableArray alloc] initWithCapacity:backupsData.count];
         for (NSDictionary *backupData in backupsData) {
             LTSBackup *backup = [[LTSBackup alloc] initFromJSON:backupData];
-            [backups addObject:backup];
+            if (backup) [backups addObject:backup];
         }
         self.backups = backups;
     } onError:^(NSError *error) {
