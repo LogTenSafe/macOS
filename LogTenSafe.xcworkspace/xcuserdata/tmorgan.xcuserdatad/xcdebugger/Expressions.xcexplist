@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in ContentView.showLoginSheet.getter:ContentView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "APIService.logIn(login:handler:):APIService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(decoding: request.httpBody!, as: UTF8.self)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ContentView.showLoginSheet.getter:ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewState.JWT">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in APIService.logIn(login:handler:):APIService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UserDefaults.standard.string(forKey: &quot;LTSJWT&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in ContentView.body.getter:ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewState.backupsError">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "globalinit_33_48F34421F8A998CEA322D5C32FC63589_func0:Global.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Bundle.main.object(forInfoDictionaryKey: &quot;TeamIdentifierPrefix&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

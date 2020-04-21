@@ -1,0 +1,1067 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0111B4512457AC6800E196C9 /* AutoBackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111B4502457AC6800E196C9 /* AutoBackupService.swift */; };
+		0134ED4024502564003195E3 /* BackupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED3F24502564003195E3 /* BackupListView.swift */; };
+		0134ED45245025C3003195E3 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED44245025C3003195E3 /* Backup.swift */; };
+		0134ED492450B4A7003195E3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED482450B4A7003195E3 /* APIService.swift */; };
+		0134ED4B2450B77F003195E3 /* BackupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED4A2450B77F003195E3 /* BackupItemView.swift */; };
+		0134ED512450C0E3003195E3 /* ExampleBackups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED4F2450BD40003195E3 /* ExampleBackups.swift */; };
+		01B2D1EE2457F1FF00879826 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2D1ED2457F1FF00879826 /* MenuController.swift */; };
+		01B2D2022457FCB500879826 /* LogTenSafe Help.help in Resources */ = {isa = PBXBuildFile; fileRef = 01B2D1F92457FBE200879826 /* LogTenSafe Help.help */; };
+		01B2D20424580CD300879826 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = 01B2D20324580CD300879826 /* Licenses */; };
+		01B2D20724580D2D00879826 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2D20624580D2D00879826 /* AboutView.swift */; };
+		01B2D20924580F1F00879826 /* AboutViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2D20824580F1F00879826 /* AboutViewDelegate.swift */; };
+		01C7D26A2458F9F6009009C7 /* ActionCableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7D2692458F9F6009009C7 /* ActionCableService.swift */; };
+		01CC89322457563100F3EAB0 /* Checksum in Frameworks */ = {isa = PBXBuildFile; productRef = 01CC89312457563100F3EAB0 /* Checksum */; };
+		01CD85252450210E00A6114B /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD85242450210E00A6114B /* ContentHeaderView.swift */; };
+		01CD85292450215200A6114B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD85282450215200A6114B /* MainViewController.swift */; };
+		01D2BD86244F6E470006EDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BD85244F6E470006EDBB /* AppDelegate.swift */; };
+		01D2BD88244F6E470006EDBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BD87244F6E470006EDBB /* MainView.swift */; };
+		01D2BD8A244F6E480006EDBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D2BD89244F6E480006EDBB /* Assets.xcassets */; };
+		01D2BD90244F6E480006EDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D2BD8E244F6E480006EDBB /* Main.storyboard */; };
+		01D2BD9C244F6E490006EDBB /* LogTenSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BD9B244F6E490006EDBB /* LogTenSafeTests.swift */; };
+		01D2BDA7244F6E490006EDBB /* LogTenSafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BDA6244F6E490006EDBB /* LogTenSafeUITests.swift */; };
+		01E0B07F2455189A008C48DC /* ProgressSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B07E2455189A008C48DC /* ProgressSheetView.swift */; };
+		01E0B08224551956008C48DC /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B08124551956008C48DC /* ProgressIndicator.swift */; };
+		01E0B08624552FDD008C48DC /* AlertSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B08524552FDD008C48DC /* AlertSheetView.swift */; };
+		01E8EDCD24946ED500D7E4E2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDCC24946ED500D7E4E2 /* libc++.tbd */; };
+		01E8EDCE24946EDA00D7E4E2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2DF41245966E80049CDDD /* libz.tbd */; };
+		01E8EDD024946F1400D7E4E2 /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDCF24946F1400D7E4E2 /* Bugsnag.framework */; };
+		01E8EDD424946F3800D7E4E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDD324946F3800D7E4E2 /* SystemConfiguration.framework */; };
+		01E8EDD624946FAE00D7E4E2 /* BugsnagApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E8EDD524946FAE00D7E4E2 /* BugsnagApplication.swift */; };
+		01E8EDD7249472D500D7E4E2 /* Bugsnag.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDCF24946F1400D7E4E2 /* Bugsnag.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01F0BA99245A2CF1004AC897 /* ActionCableClient in Frameworks */ = {isa = PBXBuildFile; productRef = 01F0BA98245A2CF1004AC897 /* ActionCableClient */; };
+		01F462DF2450F02C00C8D2F5 /* LogbookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F462DE2450F02C00C8D2F5 /* LogbookService.swift */; };
+		01FB49C52453B16F00370441 /* LoginSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB49C42453B16F00370441 /* LoginSheetView.swift */; };
+		01FB49C72453E61B00370441 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB49C62453E61B00370441 /* Global.swift */; };
+		01FB49C92453F20900370441 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB49C82453F20900370441 /* Login.swift */; };
+		01FB49CD2454181200370441 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 01FB49CC2454181200370441 /* Alamofire */; };
+		01FF0E0A2454CDD900EFD3B5 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 01FF0E092454CDD900EFD3B5 /* Defaults */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01B2D2002457FC9A00879826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D2BD7A244F6E470006EDBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B2D1F82457FBE200879826;
+			remoteInfo = "LogTenSafe Help";
+		};
+		01D2BD98244F6E490006EDBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D2BD7A244F6E470006EDBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D2BD81244F6E470006EDBB;
+			remoteInfo = LogTenSafe;
+		};
+		01D2BDA3244F6E490006EDBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D2BD7A244F6E470006EDBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D2BD81244F6E470006EDBB;
+			remoteInfo = LogTenSafe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01E8EDD224946F1400D7E4E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01E8EDD7249472D500D7E4E2 /* Bugsnag.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0111B4502457AC6800E196C9 /* AutoBackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoBackupService.swift; sourceTree = "<group>"; };
+		0134ED3F24502564003195E3 /* BackupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupListView.swift; sourceTree = "<group>"; };
+		0134ED44245025C3003195E3 /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		0134ED482450B4A7003195E3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		0134ED4A2450B77F003195E3 /* BackupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupItemView.swift; sourceTree = "<group>"; };
+		0134ED4F2450BD40003195E3 /* ExampleBackups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBackups.swift; sourceTree = "<group>"; };
+		01B2D1ED2457F1FF00879826 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		01B2D1F92457FBE200879826 /* LogTenSafe Help.help */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogTenSafe Help.help"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B2D1FB2457FBE200879826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B2D20324580CD300879826 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Licenses; sourceTree = "<group>"; };
+		01B2D20624580D2D00879826 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		01B2D20824580F1F00879826 /* AboutViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewDelegate.swift; sourceTree = "<group>"; };
+		01B2DF41245966E80049CDDD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		01C7D2692458F9F6009009C7 /* ActionCableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCableService.swift; sourceTree = "<group>"; };
+		01CD85242450210E00A6114B /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
+		01CD85282450215200A6114B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		01D2BD82244F6E470006EDBB /* LogTenSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogTenSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D2BD85244F6E470006EDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01D2BD87244F6E470006EDBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		01D2BD89244F6E480006EDBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D2BD8C244F6E480006EDBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01D2BD8F244F6E480006EDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01D2BD91244F6E480006EDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D2BD92244F6E480006EDBB /* LogTenSafe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogTenSafe.entitlements; sourceTree = "<group>"; };
+		01D2BD97244F6E490006EDBB /* LogTenSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogTenSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D2BD9B244F6E490006EDBB /* LogTenSafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTenSafeTests.swift; sourceTree = "<group>"; };
+		01D2BD9D244F6E490006EDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D2BDA2244F6E490006EDBB /* LogTenSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogTenSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D2BDA6244F6E490006EDBB /* LogTenSafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTenSafeUITests.swift; sourceTree = "<group>"; };
+		01D2BDA8244F6E490006EDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E0B07E2455189A008C48DC /* ProgressSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSheetView.swift; sourceTree = "<group>"; };
+		01E0B08124551956008C48DC /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		01E0B08524552FDD008C48DC /* AlertSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSheetView.swift; sourceTree = "<group>"; };
+		01E8EDCC24946ED500D7E4E2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		01E8EDCF24946F1400D7E4E2 /* Bugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01E8EDD324946F3800D7E4E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		01E8EDD524946FAE00D7E4E2 /* BugsnagApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsnagApplication.swift; sourceTree = "<group>"; };
+		01F462DE2450F02C00C8D2F5 /* LogbookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogbookService.swift; sourceTree = "<group>"; };
+		01FB49C42453B16F00370441 /* LoginSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSheetView.swift; sourceTree = "<group>"; };
+		01FB49C62453E61B00370441 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		01FB49C82453F20900370441 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B2D1F62457FBE200879826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD7F244F6E470006EDBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E8EDCE24946EDA00D7E4E2 /* libz.tbd in Frameworks */,
+				01E8EDCD24946ED500D7E4E2 /* libc++.tbd in Frameworks */,
+				01FF0E0A2454CDD900EFD3B5 /* Defaults in Frameworks */,
+				01E8EDD024946F1400D7E4E2 /* Bugsnag.framework in Frameworks */,
+				01F0BA99245A2CF1004AC897 /* ActionCableClient in Frameworks */,
+				01FB49CD2454181200370441 /* Alamofire in Frameworks */,
+				01E8EDD424946F3800D7E4E2 /* SystemConfiguration.framework in Frameworks */,
+				01CC89322457563100F3EAB0 /* Checksum in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD94244F6E490006EDBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD9F244F6E490006EDBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0134ED472450B49D003195E3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0134ED482450B4A7003195E3 /* APIService.swift */,
+				01F462DE2450F02C00C8D2F5 /* LogbookService.swift */,
+				0111B4502457AC6800E196C9 /* AutoBackupService.swift */,
+				01C7D2692458F9F6009009C7 /* ActionCableService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0134ED4C2450BD24003195E3 /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				0134ED4F2450BD40003195E3 /* ExampleBackups.swift */,
+			);
+			path = Previews;
+			sourceTree = "<group>";
+		};
+		0141FC1C2456D3BE00C52EE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0134ED44245025C3003195E3 /* Backup.swift */,
+				01FB49C82453F20900370441 /* Login.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0141FC252456D4C700C52EE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E8EDD324946F3800D7E4E2 /* SystemConfiguration.framework */,
+				01E8EDCF24946F1400D7E4E2 /* Bugsnag.framework */,
+				01E8EDCC24946ED500D7E4E2 /* libc++.tbd */,
+				01B2DF41245966E80049CDDD /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01B2D1FA2457FBE200879826 /* LogTenSafe Help */ = {
+			isa = PBXGroup;
+			children = (
+				01B2D1FB2457FBE200879826 /* Info.plist */,
+			);
+			path = "LogTenSafe Help";
+			sourceTree = "<group>";
+		};
+		01B2D20524580D2100879826 /* About View */ = {
+			isa = PBXGroup;
+			children = (
+				01B2D20624580D2D00879826 /* AboutView.swift */,
+			);
+			path = "About View";
+			sourceTree = "<group>";
+		};
+		01B2D20A24580F4200879826 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				01CD85282450215200A6114B /* MainViewController.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		01B2D20B24580F4D00879826 /* About View */ = {
+			isa = PBXGroup;
+			children = (
+				01B2D20824580F1F00879826 /* AboutViewDelegate.swift */,
+			);
+			path = "About View";
+			sourceTree = "<group>";
+		};
+		01CD8521245020B300A6114B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01B2D20524580D2100879826 /* About View */,
+				01E0B0802455194E008C48DC /* Components */,
+				01FF0E0D24550C1E00EFD3B5 /* Main View */,
+				0134ED4C2450BD24003195E3 /* Previews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01CD8522245020C000A6114B /* Delegates and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01B2D20B24580F4D00879826 /* About View */,
+				01B2D20A24580F4200879826 /* Main View */,
+				01D2BD85244F6E470006EDBB /* AppDelegate.swift */,
+				01E8EDD524946FAE00D7E4E2 /* BugsnagApplication.swift */,
+				01B2D1ED2457F1FF00879826 /* MenuController.swift */,
+			);
+			path = "Delegates and Controllers";
+			sourceTree = "<group>";
+		};
+		01CD8523245020CA00A6114B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01B2D20324580CD300879826 /* Licenses */,
+				01D2BD89244F6E480006EDBB /* Assets.xcassets */,
+				01D2BD8E244F6E480006EDBB /* Main.storyboard */,
+				01D2BD8B244F6E480006EDBB /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01CD85272450212D00A6114B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				01FB49C62453E61B00370441 /* Global.swift */,
+				0141FC1C2456D3BE00C52EE5 /* Models */,
+				0134ED472450B49D003195E3 /* Services */,
+				01CD8522245020C000A6114B /* Delegates and Controllers */,
+				01CD8521245020B300A6114B /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		01D2BD79244F6E470006EDBB = {
+			isa = PBXGroup;
+			children = (
+				01D2BD84244F6E470006EDBB /* LogTenSafe */,
+				01D2BD9A244F6E490006EDBB /* LogTenSafeTests */,
+				01D2BDA5244F6E490006EDBB /* LogTenSafeUITests */,
+				01B2D1FA2457FBE200879826 /* LogTenSafe Help */,
+				01D2BD83244F6E470006EDBB /* Products */,
+				0141FC252456D4C700C52EE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01D2BD83244F6E470006EDBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D2BD82244F6E470006EDBB /* LogTenSafe.app */,
+				01D2BD97244F6E490006EDBB /* LogTenSafeTests.xctest */,
+				01D2BDA2244F6E490006EDBB /* LogTenSafeUITests.xctest */,
+				01B2D1F92457FBE200879826 /* LogTenSafe Help.help */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D2BD84244F6E470006EDBB /* LogTenSafe */ = {
+			isa = PBXGroup;
+			children = (
+				01CD85272450212D00A6114B /* Source */,
+				01CD8523245020CA00A6114B /* Resources */,
+				01D2BD91244F6E480006EDBB /* Info.plist */,
+				01D2BD92244F6E480006EDBB /* LogTenSafe.entitlements */,
+			);
+			path = LogTenSafe;
+			sourceTree = "<group>";
+		};
+		01D2BD8B244F6E480006EDBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				01D2BD8C244F6E480006EDBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01D2BD9A244F6E490006EDBB /* LogTenSafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				01D2BD9B244F6E490006EDBB /* LogTenSafeTests.swift */,
+				01D2BD9D244F6E490006EDBB /* Info.plist */,
+			);
+			path = LogTenSafeTests;
+			sourceTree = "<group>";
+		};
+		01D2BDA5244F6E490006EDBB /* LogTenSafeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01D2BDA6244F6E490006EDBB /* LogTenSafeUITests.swift */,
+				01D2BDA8244F6E490006EDBB /* Info.plist */,
+			);
+			path = LogTenSafeUITests;
+			sourceTree = "<group>";
+		};
+		01E0B0802455194E008C48DC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				01E0B08124551956008C48DC /* ProgressIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		01F462E02450FEB400C8D2F5 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				01FB49C42453B16F00370441 /* LoginSheetView.swift */,
+				01E0B07E2455189A008C48DC /* ProgressSheetView.swift */,
+				01E0B08524552FDD008C48DC /* AlertSheetView.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		01FF0E0D24550C1E00EFD3B5 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				01D2BD87244F6E470006EDBB /* MainView.swift */,
+				01CD85242450210E00A6114B /* ContentHeaderView.swift */,
+				01FF0E0E24550C2B00EFD3B5 /* Backup List */,
+				01F462E02450FEB400C8D2F5 /* Sheets */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		01FF0E0E24550C2B00EFD3B5 /* Backup List */ = {
+			isa = PBXGroup;
+			children = (
+				0134ED4A2450B77F003195E3 /* BackupItemView.swift */,
+				0134ED3F24502564003195E3 /* BackupListView.swift */,
+			);
+			path = "Backup List";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B2D1F82457FBE200879826 /* LogTenSafe Help */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B2D1FE2457FBE200879826 /* Build configuration list for PBXNativeTarget "LogTenSafe Help" */;
+			buildPhases = (
+				01B2D1F52457FBE200879826 /* Sources */,
+				01B2D1F62457FBE200879826 /* Frameworks */,
+				01B2D1F72457FBE200879826 /* Resources */,
+				01B2D1FF2457FC8000879826 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LogTenSafe Help";
+			productName = "LogTenSafe Help";
+			productReference = 01B2D1F92457FBE200879826 /* LogTenSafe Help.help */;
+			productType = "com.apple.product-type.bundle";
+		};
+		01D2BD81244F6E470006EDBB /* LogTenSafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D2BDAB244F6E490006EDBB /* Build configuration list for PBXNativeTarget "LogTenSafe" */;
+			buildPhases = (
+				01D2BD7E244F6E470006EDBB /* Sources */,
+				01D2BD7F244F6E470006EDBB /* Frameworks */,
+				01D2BD80244F6E470006EDBB /* Resources */,
+				01E8EDD224946F1400D7E4E2 /* Embed Frameworks */,
+				01E8EDD82494740000D7E4E2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B2D2012457FC9A00879826 /* PBXTargetDependency */,
+			);
+			name = LogTenSafe;
+			packageProductDependencies = (
+				01FB49CC2454181200370441 /* Alamofire */,
+				01FF0E092454CDD900EFD3B5 /* Defaults */,
+				01CC89312457563100F3EAB0 /* Checksum */,
+				01F0BA98245A2CF1004AC897 /* ActionCableClient */,
+			);
+			productName = LogTenSafe;
+			productReference = 01D2BD82244F6E470006EDBB /* LogTenSafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01D2BD96244F6E490006EDBB /* LogTenSafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D2BDAE244F6E490006EDBB /* Build configuration list for PBXNativeTarget "LogTenSafeTests" */;
+			buildPhases = (
+				01D2BD93244F6E490006EDBB /* Sources */,
+				01D2BD94244F6E490006EDBB /* Frameworks */,
+				01D2BD95244F6E490006EDBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D2BD99244F6E490006EDBB /* PBXTargetDependency */,
+			);
+			name = LogTenSafeTests;
+			productName = LogTenSafeTests;
+			productReference = 01D2BD97244F6E490006EDBB /* LogTenSafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01D2BDA1244F6E490006EDBB /* LogTenSafeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D2BDB1244F6E490006EDBB /* Build configuration list for PBXNativeTarget "LogTenSafeUITests" */;
+			buildPhases = (
+				01D2BD9E244F6E490006EDBB /* Sources */,
+				01D2BD9F244F6E490006EDBB /* Frameworks */,
+				01D2BDA0244F6E490006EDBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D2BDA4244F6E490006EDBB /* PBXTargetDependency */,
+			);
+			name = LogTenSafeUITests;
+			productName = LogTenSafeUITests;
+			productReference = 01D2BDA2244F6E490006EDBB /* LogTenSafeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D2BD7A244F6E470006EDBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Tim Morgan";
+				TargetAttributes = {
+					01B2D1F82457FBE200879826 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					01D2BD81244F6E470006EDBB = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					01D2BD96244F6E490006EDBB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 01D2BD81244F6E470006EDBB;
+					};
+					01D2BDA1244F6E490006EDBB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 01D2BD81244F6E470006EDBB;
+					};
+				};
+			};
+			buildConfigurationList = 01D2BD7D244F6E470006EDBB /* Build configuration list for PBXProject "LogTenSafe" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D2BD79244F6E470006EDBB;
+			packageReferences = (
+				01FB49CB2454181200370441 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				01FF0E082454CDD900EFD3B5 /* XCRemoteSwiftPackageReference "Defaults" */,
+				01CC892C2456DAF500F3EAB0 /* XCRemoteSwiftPackageReference "Checksum" */,
+				01F0BA97245A2CF1004AC897 /* XCRemoteSwiftPackageReference "Swift-ActionCableClient" */,
+			);
+			productRefGroup = 01D2BD83244F6E470006EDBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D2BD81244F6E470006EDBB /* LogTenSafe */,
+				01D2BD96244F6E490006EDBB /* LogTenSafeTests */,
+				01D2BDA1244F6E490006EDBB /* LogTenSafeUITests */,
+				01B2D1F82457FBE200879826 /* LogTenSafe Help */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01B2D1F72457FBE200879826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD80244F6E470006EDBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D2BD90244F6E480006EDBB /* Main.storyboard in Resources */,
+				01D2BD8A244F6E480006EDBB /* Assets.xcassets in Resources */,
+				01B2D20424580CD300879826 /* Licenses in Resources */,
+				01B2D2022457FCB500879826 /* LogTenSafe Help.help in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD95244F6E490006EDBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BDA0244F6E490006EDBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B2D1FF2457FC8000879826 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/make -C \"$(dirname \"$PRODUCT_SETTINGS_PATH\")\"\n";
+		};
+		01E8EDD82494740000D7E4E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "fork do\n  Process.setsid\n  STDIN.reopen(\"/dev/null\")\n  STDOUT.reopen(\"/dev/null\", \"a\")\n  STDERR.reopen(\"/dev/null\", \"a\")\n\n  require 'shellwords'\n\n  Dir[\"#{ENV[\"DWARF_DSYM_FOLDER_PATH\"]}/*/Contents/Resources/DWARF/*\"].each do |dsym|\n    system(\"curl --http1.1 -F apiKey=730d83065b6d027cbded0b6e99314b22 -F dsym=@#{Shellwords.escape(dsym)} -F projectRoot=#{Shellwords.escape(ENV[\"PROJECT_DIR\"])} https://upload.bugsnag.com/\")\n  end\nend\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B2D1F52457FBE200879826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD7E244F6E470006EDBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D2BD88244F6E470006EDBB /* MainView.swift in Sources */,
+				0134ED492450B4A7003195E3 /* APIService.swift in Sources */,
+				0111B4512457AC6800E196C9 /* AutoBackupService.swift in Sources */,
+				01FB49C52453B16F00370441 /* LoginSheetView.swift in Sources */,
+				01B2D1EE2457F1FF00879826 /* MenuController.swift in Sources */,
+				01CD85252450210E00A6114B /* ContentHeaderView.swift in Sources */,
+				01E8EDD624946FAE00D7E4E2 /* BugsnagApplication.swift in Sources */,
+				01E0B08224551956008C48DC /* ProgressIndicator.swift in Sources */,
+				01C7D26A2458F9F6009009C7 /* ActionCableService.swift in Sources */,
+				0134ED512450C0E3003195E3 /* ExampleBackups.swift in Sources */,
+				01E0B07F2455189A008C48DC /* ProgressSheetView.swift in Sources */,
+				01E0B08624552FDD008C48DC /* AlertSheetView.swift in Sources */,
+				01FB49C92453F20900370441 /* Login.swift in Sources */,
+				01B2D20924580F1F00879826 /* AboutViewDelegate.swift in Sources */,
+				01CD85292450215200A6114B /* MainViewController.swift in Sources */,
+				0134ED45245025C3003195E3 /* Backup.swift in Sources */,
+				0134ED4024502564003195E3 /* BackupListView.swift in Sources */,
+				01F462DF2450F02C00C8D2F5 /* LogbookService.swift in Sources */,
+				01FB49C72453E61B00370441 /* Global.swift in Sources */,
+				01B2D20724580D2D00879826 /* AboutView.swift in Sources */,
+				01D2BD86244F6E470006EDBB /* AppDelegate.swift in Sources */,
+				0134ED4B2450B77F003195E3 /* BackupItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD93244F6E490006EDBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D2BD9C244F6E490006EDBB /* LogTenSafeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D2BD9E244F6E490006EDBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D2BDA7244F6E490006EDBB /* LogTenSafeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01B2D2012457FC9A00879826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B2D1F82457FBE200879826 /* LogTenSafe Help */;
+			targetProxy = 01B2D2002457FC9A00879826 /* PBXContainerItemProxy */;
+		};
+		01D2BD99244F6E490006EDBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D2BD81244F6E470006EDBB /* LogTenSafe */;
+			targetProxy = 01D2BD98244F6E490006EDBB /* PBXContainerItemProxy */;
+		};
+		01D2BDA4244F6E490006EDBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D2BD81244F6E470006EDBB /* LogTenSafe */;
+			targetProxy = 01D2BDA3244F6E490006EDBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01D2BD8E244F6E480006EDBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D2BD8F244F6E480006EDBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01B2D1FC2457FBE200879826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				INFOPLIST_FILE = "LogTenSafe Help/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafe.help;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = help;
+			};
+			name = Debug;
+		};
+		01B2D1FD2457FBE200879826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				INFOPLIST_FILE = "LogTenSafe Help/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafe.help;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = help;
+			};
+			name = Release;
+		};
+		01D2BDA9244F6E490006EDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01D2BDAA244F6E490006EDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		01D2BDAC244F6E490006EDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogTenSafe/LogTenSafe.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"LogTenSafe/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LogTenSafe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		01D2BDAD244F6E490006EDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogTenSafe/LogTenSafe.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"LogTenSafe/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LogTenSafe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		01D2BDAF244F6E490006EDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				INFOPLIST_FILE = LogTenSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogTenSafe.app/Contents/MacOS/LogTenSafe";
+			};
+			name = Debug;
+		};
+		01D2BDB0244F6E490006EDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				INFOPLIST_FILE = LogTenSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogTenSafe.app/Contents/MacOS/LogTenSafe";
+			};
+			name = Release;
+		};
+		01D2BDB2244F6E490006EDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				INFOPLIST_FILE = LogTenSafeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LogTenSafe;
+			};
+			name = Debug;
+		};
+		01D2BDB3244F6E490006EDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2NFSK2WB24;
+				INFOPLIST_FILE = LogTenSafeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LogTenSafe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B2D1FE2457FBE200879826 /* Build configuration list for PBXNativeTarget "LogTenSafe Help" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B2D1FC2457FBE200879826 /* Debug */,
+				01B2D1FD2457FBE200879826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D2BD7D244F6E470006EDBB /* Build configuration list for PBXProject "LogTenSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D2BDA9244F6E490006EDBB /* Debug */,
+				01D2BDAA244F6E490006EDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D2BDAB244F6E490006EDBB /* Build configuration list for PBXNativeTarget "LogTenSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D2BDAC244F6E490006EDBB /* Debug */,
+				01D2BDAD244F6E490006EDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D2BDAE244F6E490006EDBB /* Build configuration list for PBXNativeTarget "LogTenSafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D2BDAF244F6E490006EDBB /* Debug */,
+				01D2BDB0244F6E490006EDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D2BDB1244F6E490006EDBB /* Build configuration list for PBXNativeTarget "LogTenSafeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D2BDB2244F6E490006EDBB /* Debug */,
+				01D2BDB3244F6E490006EDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01CC892C2456DAF500F3EAB0 /* XCRemoteSwiftPackageReference "Checksum" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rnine/Checksum.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		01F0BA97245A2CF1004AC897 /* XCRemoteSwiftPackageReference "Swift-ActionCableClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LogTenSafe/Swift-ActionCableClient.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		01FB49CB2454181200370441 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		01FF0E082454CDD900EFD3B5 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01CC89312457563100F3EAB0 /* Checksum */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01CC892C2456DAF500F3EAB0 /* XCRemoteSwiftPackageReference "Checksum" */;
+			productName = Checksum;
+		};
+		01F0BA98245A2CF1004AC897 /* ActionCableClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01F0BA97245A2CF1004AC897 /* XCRemoteSwiftPackageReference "Swift-ActionCableClient" */;
+			productName = ActionCableClient;
+		};
+		01FB49CC2454181200370441 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01FB49CB2454181200370441 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		01FF0E092454CDD900EFD3B5 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01FF0E082454CDD900EFD3B5 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 01D2BD7A244F6E470006EDBB /* Project object */;
+}
