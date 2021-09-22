@@ -7,7 +7,7 @@ HELP := $(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)
 export LANG ?= en_US.UTF-8
 
 $(HELP) : * **/*
-	[[ -s "$(HOME)/.rvm/environments/ruby-2.7.1@xcode" ]] && source "$(HOME)/.rvm/environments/ruby-2.7.1@xcode" ; \
+	[[ -s "$(HOME)/.rvm/environments/ruby-3.0.2@xcode" ]] && source "$(HOME)/.rvm/environments/ruby-3.0.2@xcode" ; \
 	(which -s jekyll || (echo "error: Jekyll not found - check setup requirements" ; false )) \
 	&& jekyll build --destination "$(HELP)"
 	for LPROJ in "$(HELP)"/*.lproj ; do \

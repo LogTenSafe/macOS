@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LoginSheetView: View {
     @EnvironmentObject var viewController: MainViewController
+    @Namespace private var namespace
     
     @State var email: String = ""
     @State var password: String = ""
@@ -12,7 +13,8 @@ struct LoginSheetView: View {
             
             VStack(alignment: .leading, spacing: 0) {
                 Text("Email")
-                TextField("", text: $email) //TODO make first responder
+                TextField("", text: $email)
+                    //.prefersDefaultFocus(true, in: namespace)
             }.padding(.bottom, 5)
             VStack(alignment: .leading, spacing: 0) {
                 Text("Password")
@@ -32,7 +34,10 @@ struct LoginSheetView: View {
                     .foregroundColor(.blue)
                 Spacer()
                 Button("Quit") { self.quit() }
-                Button("Log In") { self.logIn() }.disabled(viewController.loggingIn)
+                    .keyboardShortcut(.cancelAction)
+                Button("Log In") { self.logIn() }
+                    .keyboardShortcut(.defaultAction)
+                    .disabled(viewController.loggingIn)
             }.padding(.top)
         }.padding()
     }

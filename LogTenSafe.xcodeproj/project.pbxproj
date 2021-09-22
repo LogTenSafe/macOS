@@ -13,7 +13,8 @@
 		0134ED492450B4A7003195E3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED482450B4A7003195E3 /* APIService.swift */; };
 		0134ED4B2450B77F003195E3 /* BackupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED4A2450B77F003195E3 /* BackupItemView.swift */; };
 		0134ED512450C0E3003195E3 /* ExampleBackups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED4F2450BD40003195E3 /* ExampleBackups.swift */; };
-		01B2D1EE2457F1FF00879826 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2D1ED2457F1FF00879826 /* MenuController.swift */; };
+		016A3461251312CF0039A739 /* Bugsnag in Frameworks */ = {isa = PBXBuildFile; productRef = 016A3460251312CF0039A739 /* Bugsnag */; };
+		01A75A4526FB555000CDB08D /* LogTenSafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A75A4426FB555000CDB08D /* LogTenSafeApp.swift */; };
 		01B2D2022457FCB500879826 /* LogTenSafe Help.help in Resources */ = {isa = PBXBuildFile; fileRef = 01B2D1F92457FBE200879826 /* LogTenSafe Help.help */; };
 		01B2D20424580CD300879826 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = 01B2D20324580CD300879826 /* Licenses */; };
 		01B2D20724580D2D00879826 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2D20624580D2D00879826 /* AboutView.swift */; };
@@ -22,10 +23,8 @@
 		01CC89322457563100F3EAB0 /* Checksum in Frameworks */ = {isa = PBXBuildFile; productRef = 01CC89312457563100F3EAB0 /* Checksum */; };
 		01CD85252450210E00A6114B /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD85242450210E00A6114B /* ContentHeaderView.swift */; };
 		01CD85292450215200A6114B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD85282450215200A6114B /* MainViewController.swift */; };
-		01D2BD86244F6E470006EDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BD85244F6E470006EDBB /* AppDelegate.swift */; };
 		01D2BD88244F6E470006EDBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BD87244F6E470006EDBB /* MainView.swift */; };
 		01D2BD8A244F6E480006EDBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D2BD89244F6E480006EDBB /* Assets.xcassets */; };
-		01D2BD90244F6E480006EDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D2BD8E244F6E480006EDBB /* Main.storyboard */; };
 		01D2BD9C244F6E490006EDBB /* LogTenSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BD9B244F6E490006EDBB /* LogTenSafeTests.swift */; };
 		01D2BDA7244F6E490006EDBB /* LogTenSafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2BDA6244F6E490006EDBB /* LogTenSafeUITests.swift */; };
 		01E0B07F2455189A008C48DC /* ProgressSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B07E2455189A008C48DC /* ProgressSheetView.swift */; };
@@ -33,10 +32,8 @@
 		01E0B08624552FDD008C48DC /* AlertSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B08524552FDD008C48DC /* AlertSheetView.swift */; };
 		01E8EDCD24946ED500D7E4E2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDCC24946ED500D7E4E2 /* libc++.tbd */; };
 		01E8EDCE24946EDA00D7E4E2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2DF41245966E80049CDDD /* libz.tbd */; };
-		01E8EDD024946F1400D7E4E2 /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDCF24946F1400D7E4E2 /* Bugsnag.framework */; };
 		01E8EDD424946F3800D7E4E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDD324946F3800D7E4E2 /* SystemConfiguration.framework */; };
 		01E8EDD624946FAE00D7E4E2 /* BugsnagApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E8EDD524946FAE00D7E4E2 /* BugsnagApplication.swift */; };
-		01E8EDD7249472D500D7E4E2 /* Bugsnag.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8EDCF24946F1400D7E4E2 /* Bugsnag.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		01F0BA99245A2CF1004AC897 /* ActionCableClient in Frameworks */ = {isa = PBXBuildFile; productRef = 01F0BA98245A2CF1004AC897 /* ActionCableClient */; };
 		01F462DF2450F02C00C8D2F5 /* LogbookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F462DE2450F02C00C8D2F5 /* LogbookService.swift */; };
 		01FB49C52453B16F00370441 /* LoginSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB49C42453B16F00370441 /* LoginSheetView.swift */; };
@@ -77,7 +74,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				01E8EDD7249472D500D7E4E2 /* Bugsnag.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +87,7 @@
 		0134ED482450B4A7003195E3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		0134ED4A2450B77F003195E3 /* BackupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupItemView.swift; sourceTree = "<group>"; };
 		0134ED4F2450BD40003195E3 /* ExampleBackups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBackups.swift; sourceTree = "<group>"; };
-		01B2D1ED2457F1FF00879826 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		01A75A4426FB555000CDB08D /* LogTenSafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTenSafeApp.swift; sourceTree = "<group>"; };
 		01B2D1F92457FBE200879826 /* LogTenSafe Help.help */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogTenSafe Help.help"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B2D1FB2457FBE200879826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01B2D20324580CD300879826 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Licenses; sourceTree = "<group>"; };
@@ -102,11 +98,9 @@
 		01CD85242450210E00A6114B /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
 		01CD85282450215200A6114B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01D2BD82244F6E470006EDBB /* LogTenSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogTenSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		01D2BD85244F6E470006EDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D2BD87244F6E470006EDBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		01D2BD89244F6E480006EDBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D2BD8C244F6E480006EDBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		01D2BD8F244F6E480006EDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01D2BD91244F6E480006EDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D2BD92244F6E480006EDBB /* LogTenSafe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogTenSafe.entitlements; sourceTree = "<group>"; };
 		01D2BD97244F6E490006EDBB /* LogTenSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogTenSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,9 +137,9 @@
 				01E8EDCE24946EDA00D7E4E2 /* libz.tbd in Frameworks */,
 				01E8EDCD24946ED500D7E4E2 /* libc++.tbd in Frameworks */,
 				01FF0E0A2454CDD900EFD3B5 /* Defaults in Frameworks */,
-				01E8EDD024946F1400D7E4E2 /* Bugsnag.framework in Frameworks */,
 				01F0BA99245A2CF1004AC897 /* ActionCableClient in Frameworks */,
 				01FB49CD2454181200370441 /* Alamofire in Frameworks */,
+				016A3461251312CF0039A739 /* Bugsnag in Frameworks */,
 				01E8EDD424946F3800D7E4E2 /* SystemConfiguration.framework in Frameworks */,
 				01CC89322457563100F3EAB0 /* Checksum in Frameworks */,
 			);
@@ -171,10 +165,10 @@
 		0134ED472450B49D003195E3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0134ED482450B4A7003195E3 /* APIService.swift */,
-				01F462DE2450F02C00C8D2F5 /* LogbookService.swift */,
-				0111B4502457AC6800E196C9 /* AutoBackupService.swift */,
 				01C7D2692458F9F6009009C7 /* ActionCableService.swift */,
+				0134ED482450B4A7003195E3 /* APIService.swift */,
+				0111B4502457AC6800E196C9 /* AutoBackupService.swift */,
+				01F462DE2450F02C00C8D2F5 /* LogbookService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -199,10 +193,10 @@
 		0141FC252456D4C700C52EE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				01E8EDD324946F3800D7E4E2 /* SystemConfiguration.framework */,
 				01E8EDCF24946F1400D7E4E2 /* Bugsnag.framework */,
 				01E8EDCC24946ED500D7E4E2 /* libc++.tbd */,
 				01B2DF41245966E80049CDDD /* libz.tbd */,
+				01E8EDD324946F3800D7E4E2 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,9 +249,7 @@
 			children = (
 				01B2D20B24580F4D00879826 /* About View */,
 				01B2D20A24580F4200879826 /* Main View */,
-				01D2BD85244F6E470006EDBB /* AppDelegate.swift */,
 				01E8EDD524946FAE00D7E4E2 /* BugsnagApplication.swift */,
-				01B2D1ED2457F1FF00879826 /* MenuController.swift */,
 			);
 			path = "Delegates and Controllers";
 			sourceTree = "<group>";
@@ -265,9 +257,8 @@
 		01CD8523245020CA00A6114B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				01B2D20324580CD300879826 /* Licenses */,
 				01D2BD89244F6E480006EDBB /* Assets.xcassets */,
-				01D2BD8E244F6E480006EDBB /* Main.storyboard */,
+				01B2D20324580CD300879826 /* Licenses */,
 				01D2BD8B244F6E480006EDBB /* Preview Content */,
 			);
 			path = Resources;
@@ -276,10 +267,11 @@
 		01CD85272450212D00A6114B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				01CD8522245020C000A6114B /* Delegates and Controllers */,
 				01FB49C62453E61B00370441 /* Global.swift */,
+				01A75A4426FB555000CDB08D /* LogTenSafeApp.swift */,
 				0141FC1C2456D3BE00C52EE5 /* Models */,
 				0134ED472450B49D003195E3 /* Services */,
-				01CD8522245020C000A6114B /* Delegates and Controllers */,
 				01CD8521245020B300A6114B /* Views */,
 			);
 			path = Source;
@@ -288,12 +280,12 @@
 		01D2BD79244F6E470006EDBB = {
 			isa = PBXGroup;
 			children = (
+				0141FC252456D4C700C52EE5 /* Frameworks */,
 				01D2BD84244F6E470006EDBB /* LogTenSafe */,
+				01B2D1FA2457FBE200879826 /* LogTenSafe Help */,
 				01D2BD9A244F6E490006EDBB /* LogTenSafeTests */,
 				01D2BDA5244F6E490006EDBB /* LogTenSafeUITests */,
-				01B2D1FA2457FBE200879826 /* LogTenSafe Help */,
 				01D2BD83244F6E470006EDBB /* Products */,
-				0141FC252456D4C700C52EE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -311,10 +303,10 @@
 		01D2BD84244F6E470006EDBB /* LogTenSafe */ = {
 			isa = PBXGroup;
 			children = (
-				01CD85272450212D00A6114B /* Source */,
-				01CD8523245020CA00A6114B /* Resources */,
-				01D2BD91244F6E480006EDBB /* Info.plist */,
 				01D2BD92244F6E480006EDBB /* LogTenSafe.entitlements */,
+				01D2BD91244F6E480006EDBB /* Info.plist */,
+				01CD8523245020CA00A6114B /* Resources */,
+				01CD85272450212D00A6114B /* Source */,
 			);
 			path = LogTenSafe;
 			sourceTree = "<group>";
@@ -330,8 +322,8 @@
 		01D2BD9A244F6E490006EDBB /* LogTenSafeTests */ = {
 			isa = PBXGroup;
 			children = (
-				01D2BD9B244F6E490006EDBB /* LogTenSafeTests.swift */,
 				01D2BD9D244F6E490006EDBB /* Info.plist */,
+				01D2BD9B244F6E490006EDBB /* LogTenSafeTests.swift */,
 			);
 			path = LogTenSafeTests;
 			sourceTree = "<group>";
@@ -339,8 +331,8 @@
 		01D2BDA5244F6E490006EDBB /* LogTenSafeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				01D2BDA6244F6E490006EDBB /* LogTenSafeUITests.swift */,
 				01D2BDA8244F6E490006EDBB /* Info.plist */,
+				01D2BDA6244F6E490006EDBB /* LogTenSafeUITests.swift */,
 			);
 			path = LogTenSafeUITests;
 			sourceTree = "<group>";
@@ -356,9 +348,9 @@
 		01F462E02450FEB400C8D2F5 /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				01E0B08524552FDD008C48DC /* AlertSheetView.swift */,
 				01FB49C42453B16F00370441 /* LoginSheetView.swift */,
 				01E0B07E2455189A008C48DC /* ProgressSheetView.swift */,
-				01E0B08524552FDD008C48DC /* AlertSheetView.swift */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -393,7 +385,7 @@
 				01B2D1F52457FBE200879826 /* Sources */,
 				01B2D1F62457FBE200879826 /* Frameworks */,
 				01B2D1F72457FBE200879826 /* Resources */,
-				01B2D1FF2457FC8000879826 /* ShellScript */,
+				01B2D1FF2457FC8000879826 /* Build Help */,
 			);
 			buildRules = (
 			);
@@ -412,7 +404,7 @@
 				01D2BD7F244F6E470006EDBB /* Frameworks */,
 				01D2BD80244F6E470006EDBB /* Resources */,
 				01E8EDD224946F1400D7E4E2 /* Embed Frameworks */,
-				01E8EDD82494740000D7E4E2 /* ShellScript */,
+				01E8EDD82494740000D7E4E2 /* Update Bugsnag */,
 			);
 			buildRules = (
 			);
@@ -425,6 +417,7 @@
 				01FF0E092454CDD900EFD3B5 /* Defaults */,
 				01CC89312457563100F3EAB0 /* Checksum */,
 				01F0BA98245A2CF1004AC897 /* ActionCableClient */,
+				016A3460251312CF0039A739 /* Bugsnag */,
 			);
 			productName = LogTenSafe;
 			productReference = 01D2BD82244F6E470006EDBB /* LogTenSafe.app */;
@@ -473,7 +466,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Tim Morgan";
 				TargetAttributes = {
 					01B2D1F82457FBE200879826 = {
@@ -506,6 +499,7 @@
 				01FF0E082454CDD900EFD3B5 /* XCRemoteSwiftPackageReference "Defaults" */,
 				01CC892C2456DAF500F3EAB0 /* XCRemoteSwiftPackageReference "Checksum" */,
 				01F0BA97245A2CF1004AC897 /* XCRemoteSwiftPackageReference "Swift-ActionCableClient" */,
+				016A345F251312CF0039A739 /* XCRemoteSwiftPackageReference "bugsnag-cocoa" */,
 			);
 			productRefGroup = 01D2BD83244F6E470006EDBB /* Products */;
 			projectDirPath = "";
@@ -531,7 +525,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01D2BD90244F6E480006EDBB /* Main.storyboard in Resources */,
 				01D2BD8A244F6E480006EDBB /* Assets.xcassets in Resources */,
 				01B2D20424580CD300879826 /* Licenses in Resources */,
 				01B2D2022457FCB500879826 /* LogTenSafe Help.help in Resources */,
@@ -555,7 +548,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01B2D1FF2457FC8000879826 /* ShellScript */ = {
+		01B2D1FF2457FC8000879826 /* Build Help */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -564,6 +557,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Build Help";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -572,7 +566,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/bin/make -C \"$(dirname \"$PRODUCT_SETTINGS_PATH\")\"\n";
 		};
-		01E8EDD82494740000D7E4E2 /* ShellScript */ = {
+		01E8EDD82494740000D7E4E2 /* Update Bugsnag */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -581,6 +575,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Update Bugsnag";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -605,9 +600,9 @@
 			files = (
 				01D2BD88244F6E470006EDBB /* MainView.swift in Sources */,
 				0134ED492450B4A7003195E3 /* APIService.swift in Sources */,
+				01A75A4526FB555000CDB08D /* LogTenSafeApp.swift in Sources */,
 				0111B4512457AC6800E196C9 /* AutoBackupService.swift in Sources */,
 				01FB49C52453B16F00370441 /* LoginSheetView.swift in Sources */,
-				01B2D1EE2457F1FF00879826 /* MenuController.swift in Sources */,
 				01CD85252450210E00A6114B /* ContentHeaderView.swift in Sources */,
 				01E8EDD624946FAE00D7E4E2 /* BugsnagApplication.swift in Sources */,
 				01E0B08224551956008C48DC /* ProgressIndicator.swift in Sources */,
@@ -623,7 +618,6 @@
 				01F462DF2450F02C00C8D2F5 /* LogbookService.swift in Sources */,
 				01FB49C72453E61B00370441 /* Global.swift in Sources */,
 				01B2D20724580D2D00879826 /* AboutView.swift in Sources */,
-				01D2BD86244F6E470006EDBB /* AppDelegate.swift in Sources */,
 				0134ED4B2450B77F003195E3 /* BackupItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,17 +657,6 @@
 			targetProxy = 01D2BDA3244F6E490006EDBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		01D2BD8E244F6E480006EDBB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01D2BD8F244F6E480006EDBB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		01B2D1FC2457FBE200879826 /* Debug */ = {
@@ -732,6 +715,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -756,7 +740,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -792,6 +776,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -810,7 +795,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -837,7 +822,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -863,7 +848,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -885,7 +870,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -907,7 +892,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = info.timothymorgan.LogTenSafeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1006,6 +991,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		016A345F251312CF0039A739 /* XCRemoteSwiftPackageReference "bugsnag-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bugsnag/bugsnag-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.4;
+			};
+		};
 		01CC892C2456DAF500F3EAB0 /* XCRemoteSwiftPackageReference "Checksum" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rnine/Checksum.git";
@@ -1041,6 +1034,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		016A3460251312CF0039A739 /* Bugsnag */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016A345F251312CF0039A739 /* XCRemoteSwiftPackageReference "bugsnag-cocoa" */;
+			productName = Bugsnag;
+		};
 		01CC89312457563100F3EAB0 /* Checksum */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 01CC892C2456DAF500F3EAB0 /* XCRemoteSwiftPackageReference "Checksum" */;

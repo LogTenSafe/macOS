@@ -44,6 +44,7 @@ enum MainViewSheet {
  * functionality.
  */
 
+@available(OSX 11.0, *)
 @objc class MainViewController: NSObject, ObservableObject {
     
     /** The API service to use. */
@@ -57,12 +58,12 @@ enum MainViewSheet {
     
     /** The Action Cable WebSockets client to use. */
     var backupWSService: ActionCableService<Backup>? = nil
-    private var backupWSServiceCancellable: AnyCancellable? = nil
+    
+    /** Publisher that pipes whether or not the user is logged in. */
+    @Published var loggedIn = false
     
     /** Publisher that pipes the auto-backup setting to the UI. */
     @Published var disableAutoBackup = false
-    private var toggleAutoBackupServiceWhenDefaultChangesCancellable: AnyCancellable? = nil
-    private var disableAutoBackupCancellable: AnyCancellable? = nil
     
     /** Publisher that pipes to the progress spinner on the login sheet. */
     @Published var loggingIn = false
@@ -95,10 +96,10 @@ enum MainViewSheet {
     
     /** Publisher that pipes to the view which sheet is shown (if any). */
     @Published var currentSheet: MainViewSheet = .none
-    private var currentSheetCancellable: AnyCancellable? = nil
     /** Publisher that pipes to the view whether a sheet should be displayed. */
     @Published var sheetActive = false
-    private var sheetActiveCancellable: AnyCancellable? = nil
+    
+    private var cancellables = Set<AnyCancellable>()
     
     /**
      * Creates an instance with the default service classes.
@@ -119,6 +120,10 @@ enum MainViewSheet {
         
         super.init()
         
+        Defaults.publisher(.JWT)
+            .map { $0.newValue != nil }
+            .receive(on: RunLoop.main).assign(to: &$loggedIn)
+        
         //TODO do we need the whole big-ass type annotation here?
         let sheetPublisher: Publishers.Map<Publishers.CombineLatest4<AnyPublisher<Defaults.KeyChange<String?>, Never>, Published<Progress?>.Publisher, Published<Progress?>.Publisher, Published<Error?>.Publisher>, MainViewSheet> = Defaults.publisher(.JWT).combineLatest($backupProgress, $downloadProgress, $error).map { JWT, backupProgress, downloadProgress, error in
             if error != nil { return .error }
@@ -127,20 +132,19 @@ enum MainViewSheet {
             if downloadProgress != nil { return .downloadProgress }
             return .none
         }
-        currentSheetCancellable = sheetPublisher.receive(on: RunLoop.main)
-            .assign(to: \.currentSheet, on: self)
-        sheetActiveCancellable = sheetPublisher.map { $0 != .none }.receive(on: RunLoop.main)
-            .assign(to: \.sheetActive, on: self)
+        sheetPublisher.receive(on: RunLoop.main).assign(to: &$currentSheet)
+        sheetPublisher.map { $0 != .none }.receive(on: RunLoop.main).assign(to: &$sheetActive)
         
         autoBackupService.started = Defaults[.autoBackup]
-        toggleAutoBackupServiceWhenDefaultChangesCancellable = Defaults.publisher(.autoBackup)
+        Defaults.publisher(.autoBackup)
             .map { $0.newValue }
             .receive(on: RunLoop.main).assign(to: \.started, on: autoBackupService)
-        disableAutoBackupCancellable = Defaults.publisher(.logbookData)
+            .store(in: &cancellables)
+        Defaults.publisher(.logbookData)
             .map { $0.newValue == nil }
-            .receive(on: RunLoop.main).assign(to: \.disableAutoBackup, on: self)
+            .receive(on: RunLoop.main).assign(to: &$disableAutoBackup)
         
-        backupWSServiceCancellable = Defaults.publisher(.JWT).map { $0.newValue }.receive(on: RunLoop.main).sink { [weak self] JWT in
+        Defaults.publisher(.JWT).map { $0.newValue }.receive(on: RunLoop.main).sink { [weak self] JWT in
             if let JWT = JWT {
                 self?.backupWSService?.stop()
                 self?.backupWSService = ActionCableService(URL: websocketsURL, receive: { [weak self] message in
@@ -153,17 +157,11 @@ enum MainViewSheet {
             } else {
                 self?.backupWSService?.stop()
             }
-        }
+        }.store(in: &cancellables)
     }
     
     deinit {
-        currentSheetCancellable?.cancel()
-        sheetActiveCancellable?.cancel()
-        
-        toggleAutoBackupServiceWhenDefaultChangesCancellable?.cancel()
-        disableAutoBackupCancellable?.cancel()
-        
-        backupWSServiceCancellable?.cancel()
+        for c in cancellables { c.cancel() }
     }
     
     /**

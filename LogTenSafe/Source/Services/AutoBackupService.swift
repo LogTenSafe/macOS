@@ -91,10 +91,10 @@ class AutoBackupService {
     private func uploadLogbook(localURL: URL, checksum: String, callback: @escaping () -> Void) {
         let hostname: String = Host.current().localizedName ?? "unknown"
         let backup = DraftBackup(hostname: hostname, logbook: localURL)
-        self.APIService.addBackup(backup) { _ in
+        self.APIService.addBackup(backup, handler:  { _ in
             Defaults[.lastChecksum] = checksum
             callback()
-        }
+        })
     }
     
     private func handleError(_ error: Error) {

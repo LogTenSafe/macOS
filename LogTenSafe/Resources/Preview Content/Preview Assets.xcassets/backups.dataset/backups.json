@@ -1,902 +1,851 @@
-[
-  {
-    "id": 122,
-    "logbook":          {
-      "size": 4538368,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2020-04-21T19:35:26.639Z",
-    "last_flight":      {
-      "date":        "2020-03-08",
-      "origin":      "CMA",
-      "destination": "SQL",
-      "duration":    1.7
-    },
-    "total_hours":      815.4,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/122.sql",
-    "last_flight_date": "2020-03-08"
-  },
-  {
-    "id":  121,
-    "logbook":          {
-      "size": 4677632,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2020-01-14T06:23:16.315Z",
-    "last_flight":      {
-      "date":        "2020-01-08",
-      "origin":      "HND",
-      "destination": "SQL",
-      "duration":    2.6
-    },
-    "total_hours":      806.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/121.sql",
-    "last_flight_date": "2020-01-08"
-  },
-  {
-    "id":  120,
-    "logbook":          {
-      "size": 4562944,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2019-10-08T05:36:09.257Z",
-    "last_flight":      {
-      "date":        "2019-10-05",
-      "origin":      "O69",
-      "destination": "SQL",
-      "duration":    0.8
-    },
-    "total_hours":      784.0,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/120.sql",
-    "last_flight_date": "2019-10-05"
-  },
-  {
-    "id":  118,
-    "logbook":          {
-      "size": 4538368,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2019-08-17T18:18:08.758Z",
-    "last_flight":      {
-      "date":        "2019-08-13",
-      "origin":      "BMI",
-      "destination": "BMI",
-      "duration":    0.6
-    },
-    "total_hours":      774.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/118.sql",
-    "last_flight_date": "2019-08-13"
-  },
-  {
-    "id":  115,
-    "logbook":          {
-      "size": 4509696,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2019-05-26T21:09:50.354Z",
-    "last_flight":      {
-      "date":        "2019-05-25",
-      "origin":      "CHD",
-      "destination": "SQL",
-      "duration":    3.7
-    },
-    "total_hours":      768.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/115.sql",
-    "last_flight_date": "2019-05-25"
-  },
-  {
-    "id":  114,
-    "logbook":          {
-      "size": 4444160,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2019-05-11T03:35:22.473Z",
-    "last_flight":      {
-      "date":        "2019-05-11",
-      "origin":      "VCB",
-      "destination": "SQL",
-      "duration":    0.5
-    },
-    "total_hours":      755.3,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/114.sql",
-    "last_flight_date": "2019-05-11"
-  },
-  {
-    "id":  113,
-    "logbook":          {
-      "size": 4390912,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2019-02-05T01:50:03.712Z",
-    "last_flight":      {
-      "date":        "2019-01-29",
-      "origin":      "HCR",
-      "destination": "SQL",
-      "duration":    3.7
-    },
-    "total_hours":      739.5,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/113.sql",
-    "last_flight_date": "2019-01-29"
-  },
-  {
-    "id":  112,
-    "logbook":          {
-      "size": 4317184,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2018-11-13T02:18:53.519Z",
-    "last_flight":      {
-      "date":        "2018-11-09",
-      "origin":      "MCE",
-      "destination": "SQL",
-      "duration":    0.7
-    },
-    "total_hours":      726.3,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/112.sql",
-    "last_flight_date": "2018-11-09"
-  },
-  {
-    "id":  110,
-    "logbook":          {
-      "size": 4374528,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2018-11-09T09:33:02.890Z",
-    "last_flight":      {
-      "date":        "2018-11-09",
-      "origin":      "MCE",
-      "destination": "SQL",
-      "duration":    0.7
-    },
-    "total_hours":      753.5,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/110.sql",
-    "last_flight_date": "2018-11-09"
-  },
-  {
-    "id":  109,
-    "logbook":          {
-      "size": 7507968,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2018-04-13T05:52:43.321Z",
-    "last_flight":      {
-      "date":        "2018-03-25",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.8
-    },
-    "total_hours":      718.4,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/109.sql",
-    "last_flight_date": "2018-03-25"
-  },
-  {
-    "id":  108,
-    "logbook":          {
-      "size": 7462912,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2018-01-05T09:54:17.457Z",
-    "last_flight":      {
-      "date":        "2018-01-03",
-      "origin":      "VIS",
-      "destination": "SQL",
-      "duration":    1.1
-    },
-    "total_hours":      709.4,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/108.sql",
-    "last_flight_date": "2018-01-03"
-  },
-  {
-    "id":  107,
-    "logbook":          {
-      "size": 7401472,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2017-09-20T01:03:06.758Z",
-    "last_flight":      {
-      "date":        "2017-08-26",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.8
-    },
-    "total_hours":      702.4,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/107.sql",
-    "last_flight_date": "2017-08-26"
-  },
-  {
-    "id":  106,
-    "logbook":          {
-      "size": 7364608,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2017-05-12T09:40:19.199Z",
-    "last_flight":      {
-      "date":        "2017-04-29",
-      "origin":      "CMA",
-      "destination": "SQL",
-      "duration":    2.0
-    },
-    "total_hours":      683.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/106.sql",
-    "last_flight_date": "2017-04-29"
-  },
-  {
-    "id":  104,
-    "logbook":          {
-      "size": 7348224,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2017-03-09T01:32:14.626Z",
-    "last_flight":      {
-      "date":        "2017-03-06",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.2
-    },
-    "total_hours":      673.8,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/104.sql",
-    "last_flight_date": "2017-03-06"
-  },
-  {
-    "id":  103,
-    "logbook":          {
-      "size": 7344128,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2017-03-02T03:34:07.227Z",
-    "last_flight":      {
-      "date":        "2017-03-01",
-      "origin":      "OGD",
-      "destination": "SQL",
-      "duration":    3.2
-    },
-    "total_hours":      674.5,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/103.sql",
-    "last_flight_date": "2017-03-01"
-  },
-  {
-    "id":  102,
-    "logbook":          {
-      "size": 7307264,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2017-02-22T04:00:36.674Z",
-    "last_flight":      {
-      "date":        "2017-02-18",
-      "origin":      "HWD",
-      "destination": "SQL",
-      "duration":    0.4
-    },
-    "total_hours":      652.4,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/102.sql",
-    "last_flight_date": "2017-02-18"
-  },
-  {
-    "id":  100,
-    "logbook":          {
-      "size": 7303168,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-12-29T21:33:05.151Z",
-    "last_flight":      {
-      "date":        "2016-12-24",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      648.8,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/100.sql",
-    "last_flight_date": "2016-12-24"
-  },
-  {
-    "id":  99,
-    "logbook":          {
-      "size": 7303168,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-12-14T18:32:34.788Z",
-    "last_flight":      {
-      "date":        "2016-12-14",
-      "origin":      "HWD",
-      "destination": "SQL",
-      "duration":    0.4
-    },
-    "total_hours":      647.8,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/99.sql",
-    "last_flight_date": "2016-12-14"
-  },
-  {
-    "id":  98,
-    "logbook":          {
-      "size": 7303168,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-12-03T00:01:11.114Z",
-    "last_flight":      {
-      "date":        "2016-11-27",
-      "origin":      "RPJ",
-      "destination": "BMI",
-      "duration":    1.2
-    },
-    "total_hours":      644.9,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/98.sql",
-    "last_flight_date": "2016-11-27"
-  },
-  {
-    "id":  97,
-    "logbook":          {
-      "size": 7192576,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-11-09T20:21:37.933Z",
-    "last_flight":      {
-      "date":        "2016-11-02",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      636.9,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/97.sql",
-    "last_flight_date": "2016-11-02"
-  },
-  {
-    "id":  96,
-    "logbook":          {
-      "size": 7192576,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-11-09T20:19:19.810Z",
-    "last_flight":      {
-      "date":        "2016-11-02",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      636.9,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/96.sql",
-    "last_flight_date": "2016-11-02"
-  },
-  {
-    "id":  95,
-    "logbook":          {
-      "size": 6828032,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-10-06T23:59:21.394Z",
-    "last_flight":      {
-      "date":        "2016-10-01",
-      "origin":      "CCR",
-      "destination": "SQL",
-      "duration":    0.5
-    },
-    "total_hours":      627.6,
-    "hostname":         "Titan",
-    "download_url":     "https://logtensafe.com/backups/95.sql",
-    "last_flight_date": "2016-10-01"
-  },
-  {
-    "id":  65,
-    "logbook":          {
-      "size": 7557120,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-07-04T04:32:21.340Z",
-    "last_flight":      {
-      "date":        "2016-07-03",
-      "origin":      "D83",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      614.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/65.sql",
-    "last_flight_date": "2016-07-03"
-  },
-  {
-    "id":  63,
-    "logbook":          {
-      "size": 6848512,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-03-27T05:00:35.910Z",
-    "last_flight":      {
-      "date":        "2016-03-26",
-      "origin":      "HAF",
-      "destination": "SQL",
-      "duration":    0.3
-    },
-    "total_hours":      600.1,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/63.sql",
-    "last_flight_date": "2016-03-26"
-  },
-  {
-    "id":  60,
-    "logbook":          {
-      "size": 4620288,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2016-03-04T06:00:17.546Z",
-    "last_flight":      {
-      "date":        "2016-03-01",
-      "origin":      "FUL",
-      "destination": "SQL",
-      "duration":    2.3
-    },
-    "total_hours":      599.2,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/60.sql",
-    "last_flight_date": "2016-03-01"
-  },
-  {
-    "id":  59,
-    "logbook":          {
-      "size": 4210688,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-12-23T04:57:29.816Z",
-    "last_flight":      {
-      "date":        "2015-12-20",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    0.9
-    },
-    "total_hours":      589.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/59.sql",
-    "last_flight_date": "2015-12-20"
-  },
-  {
-    "id":  58,
-    "logbook":          {
-      "size": 3801088,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-12-05T05:59:14.585Z",
-    "last_flight":      {
-      "date":        "2015-12-05",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    0.6
-    },
-    "total_hours":      579.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/58.sql",
-    "last_flight_date": "2015-12-05"
-  },
-  {
-    "id":  57,
-    "logbook":          {
-      "size": 3575808,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-11-07T19:44:38.356Z",
-    "last_flight":      {
-      "date":        "2015-10-24",
-      "origin":      "PRB",
-      "destination": "SQL",
-      "duration":    1.1
-    },
-    "total_hours":      574.9,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/57.sql",
-    "last_flight_date": "2015-10-24"
-  },
-  {
-    "id":  56,
-    "logbook":          {
-      "size": 3604480,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-10-05T18:53:01.973Z",
-    "last_flight":      {
-      "date":        "2015-10-03",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.1
-    },
-    "total_hours":      572.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/56.sql",
-    "last_flight_date": "2015-10-03"
-  },
-  {
-    "id":  55,
-    "logbook":          {
-      "size": 3457024,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-09-28T01:40:13.326Z",
-    "last_flight":      {
-      "date":        "2015-09-26",
-      "origin":      null,
-      "destination": null,
-      "duration":    0.1
-    },
-    "total_hours":      571.7,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/55.sql",
-    "last_flight_date": "2015-09-26"
-  },
-  {
-    "id":  54,
-    "logbook":          {
-      "size": 3325952,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-09-27T01:57:07.572Z",
-    "last_flight":      {
-      "date":        "2015-08-08",
-      "origin":      "PRB",
-      "destination": "SQL",
-      "duration":    1.1
-    },
-    "total_hours":      563.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/54.sql",
-    "last_flight_date": "2015-08-08"
-  },
-  {
-    "id":  53,
-    "logbook":          {
-      "size": 3325952,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-08-23T02:25:20.922Z",
-    "last_flight":      {
-      "date":        "2015-08-08",
-      "origin":      "PRB",
-      "destination": "SQL",
-      "duration":    1.1
-    },
-    "total_hours":      563.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/53.sql",
-    "last_flight_date": "2015-08-08"
-  },
-  {
-    "id":  52,
-    "logbook":          {
-      "size": 3321856,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-05-27T08:48:09.695Z",
-    "last_flight":      {
-      "date":        "2015-05-25",
-      "origin":      "CEC",
-      "destination": "SQL",
-      "duration":    2.2
-    },
-    "total_hours":      540.2,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/52.sql",
-    "last_flight_date": "2015-05-25"
-  },
-  {
-    "id":  51,
-    "logbook":          {
-      "size": 3186688,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-03-03T04:42:50.789Z",
-    "last_flight":      {
-      "date":        "2015-03-02",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.4
-    },
-    "total_hours":      499.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/51.sql",
-    "last_flight_date": "2015-03-02"
-  },
-  {
-    "id":  50,
-    "logbook":          {
-      "size": 3178496,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-02-23T19:43:50.382Z",
-    "last_flight":      {
-      "date":        "2015-02-20",
-      "origin":      "CIC",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      498.2,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/50.sql",
-    "last_flight_date": "2015-02-20"
-  },
-  {
-    "id":  47,
-    "logbook":          {
-      "size": 3153920,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2015-01-01T23:51:24.027Z",
-    "last_flight":      {
-      "date":        "2014-12-31",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    0.9
-    },
-    "total_hours":      483.3,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/47.sql",
-    "last_flight_date": "2014-12-31"
-  },
-  {
-    "id":  46,
-    "logbook":          {
-      "size": 3047424,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-12-20T14:55:06.980Z",
-    "last_flight":      {
-      "date":        "2014-11-16",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      475.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/46.sql",
-    "last_flight_date": "2014-11-16"
-  },
-  {
-    "id":  45,
-    "logbook":          {
-      "size": 3047424,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-10-25T23:16:54.330Z",
-    "last_flight":      {
-      "date":        "2014-10-24",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    0.9
-    },
-    "total_hours":      472.4,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/45.sql",
-    "last_flight_date": "2014-10-24"
-  },
-  {
-    "id":  44,
-    "logbook":          {
-      "size": 3022848,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-10-20T07:39:28.969Z",
-    "last_flight":      {
-      "date":        "2014-10-18",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      472.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/44.sql",
-    "last_flight_date": "2014-10-18"
-  },
-  {
-    "id":  43,
-    "logbook":          {
-      "size": 3330048,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-10-20T06:06:34.187Z",
-    "last_flight":      {
-      "date":        "2014-10-13",
-      "origin":      "E16",
-      "destination": "SQL",
-      "duration":    0.5
-    },
-    "total_hours":      466.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/43.sql",
-    "last_flight_date": "2014-10-13"
-  },
-  {
-    "id":  42,
-    "logbook":          {
-      "size": 3330048,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-10-13T05:48:45.144Z",
-    "last_flight":      {
-      "date":        "2014-10-13",
-      "origin":      "E16",
-      "destination": "SQL",
-      "duration":    0.5
-    },
-    "total_hours":      466.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/42.sql",
-    "last_flight_date": "2014-10-13"
-  },
-  {
-    "id":  41,
-    "logbook":          {
-      "size": 3330048,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-10-05T05:45:16.600Z",
-    "last_flight":      {
-      "date":        "2014-10-05",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    2.0
-    },
-    "total_hours":      459.5,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/41.sql",
-    "last_flight_date": "2014-10-05"
-  },
-  {
-    "id":  40,
-    "logbook":          {
-      "size": 3330048,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-10-04T06:44:55.232Z",
-    "last_flight":      {
-      "date":        "2014-10-04",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    0.7
-    },
-    "total_hours":      457.5,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/40.sql",
-    "last_flight_date": "2014-10-04"
-  },
-  {
-    "id":  39,
-    "logbook":          {
-      "size": 3436544,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-10-03T08:44:34.558Z",
-    "last_flight":      {
-      "date":        "2014-09-28",
-      "origin":      "CCB",
-      "destination": "SQL",
-      "duration":    3.3
-    },
-    "total_hours":      456.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/39.sql",
-    "last_flight_date": "2014-09-28"
-  },
-  {
-    "id":  38,
-    "logbook":          {
-      "size": 3436544,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-09-28T18:57:01.460Z",
-    "last_flight":      {
-      "date":        "2014-09-28",
-      "origin":      "CCB",
-      "destination": "SQL",
-      "duration":    3.3
-    },
-    "total_hours":      456.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/38.sql",
-    "last_flight_date": "2014-09-28"
-  },
-  {
-    "id":  37,
-    "logbook":          {
-      "size": 3313664,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-09-28T18:26:55.442Z",
-    "last_flight":      {
-      "date":        "2014-09-28",
-      "origin":      "CCB",
-      "destination": "SQL",
-      "duration":    3.3
-    },
-    "total_hours":      456.8,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/37.sql",
-    "last_flight_date": "2014-09-28"
-  },
-  {
-    "id":  36,
-    "logbook":          {
-      "size": 3260416,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-09-20T02:01:17.851Z",
-    "last_flight":      {
-      "date":        "2014-09-20",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    0.0
-    },
-    "total_hours":      449.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/36.sql",
-    "last_flight_date": "2014-09-20"
-  },
-  {
-    "id":  35,
-    "logbook":          {
-      "size": 3252224,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-09-17T07:27:54.125Z",
-    "last_flight":      {
-      "date":        "2014-08-23",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      449.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/35.sql",
-    "last_flight_date": "2014-08-23"
-  },
-  {
-    "id":  34,
-    "logbook":          {
-      "size": 3252224,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-08-24T20:44:17.609Z",
-    "last_flight":      {
-      "date":        "2014-08-23",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      449.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/34.sql",
-    "last_flight_date": "2014-08-23"
-  },
-  {
-    "id":  33,
-    "logbook":          {
-      "size": 3252224,
-      "path":  "/rails/active_storage/blobs/example.sql"
-    },
-    "created_at":       "2014-08-24T03:44:24.057Z",
-    "last_flight":      {
-      "date":        "2014-08-23",
-      "origin":      "SQL",
-      "destination": "SQL",
-      "duration":    1.0
-    },
-    "total_hours":      449.6,
-    "hostname":         "Aergia",
-    "download_url":     "https://logtensafe.com/backups/33.sql",
-    "last_flight_date": "2014-08-23"
-  }
-]
+[{
+    "id": 2,
+    "created_at": "2020-06-12T21:26:34.202Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2020-05-29",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 2.4
+    },
+    "total_hours": 818.3,
+    "logbook": {
+        "size": 4550656,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5126b67f97bcae217ff9db266a7507ce888b8dd1/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 52,
+    "created_at": "2020-04-21T19:35:26.639Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2020-03-08",
+        "origin": "CMA",
+        "destination": "SQL",
+        "duration": 1.7
+    },
+    "total_hours": 815.4,
+    "logbook": {
+        "size": 4538368,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6454be86d630a0dfa47de6c919cd6c4b91da09f8/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 51,
+    "created_at": "2020-01-14T06:23:16.315Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2020-01-08",
+        "origin": "HND",
+        "destination": "SQL",
+        "duration": 2.6
+    },
+    "total_hours": 806.8,
+    "logbook": {
+        "size": 4677632,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9b2640ef4d3ed2fc128bc2f4329e5aa5accb2fd6/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 50,
+    "created_at": "2019-10-08T05:36:09.257Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2019-10-05",
+        "origin": "O69",
+        "destination": "SQL",
+        "duration": 0.8
+    },
+    "total_hours": 784.0,
+    "logbook": {
+        "size": 4562944,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e329d3c6947f8e686bc6366f869396f05c09a21d/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 49,
+    "created_at": "2019-08-17T18:18:08.758Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2019-08-13",
+        "origin": "BMI",
+        "destination": "BMI",
+        "duration": 0.6
+    },
+    "total_hours": 774.6,
+    "logbook": {
+        "size": 4538368,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5110cf0ccdd76c9b2e225d8d86c111373bca4246/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 48,
+    "created_at": "2019-05-26T21:09:50.354Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2019-05-25",
+        "origin": "CHD",
+        "destination": "SQL",
+        "duration": 3.7
+    },
+    "total_hours": 768.6,
+    "logbook": {
+        "size": 4509696,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--030014a40473e0a4e8c397b5ec78693ebfdd8dc9/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 47,
+    "created_at": "2019-05-11T03:35:22.473Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2019-05-11",
+        "origin": "VCB",
+        "destination": "SQL",
+        "duration": 0.5
+    },
+    "total_hours": 755.3,
+    "logbook": {
+        "size": 4444160,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--840247d01c501019a0ce073e903f6577a4e8c2fc/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 46,
+    "created_at": "2019-02-05T01:50:03.712Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2019-01-29",
+        "origin": "HCR",
+        "destination": "SQL",
+        "duration": 3.7
+    },
+    "total_hours": 739.5,
+    "logbook": {
+        "size": 4390912,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--388dc2d68def419d0952b974391bce9adb64cd52/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 45,
+    "created_at": "2018-11-13T02:18:53.519Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2018-11-09",
+        "origin": "MCE",
+        "destination": "SQL",
+        "duration": 0.7
+    },
+    "total_hours": 726.3,
+    "logbook": {
+        "size": 4317184,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--33a32774f5efd4c3388618a29577b7c948bcc8ff/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 44,
+    "created_at": "2018-11-09T09:33:02.890Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2018-11-09",
+        "origin": "MCE",
+        "destination": "SQL",
+        "duration": 0.7
+    },
+    "total_hours": 753.5,
+    "logbook": {
+        "size": 4374528,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f69436217aa3ac8470e03803f35b8d7aa7041dd4/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 43,
+    "created_at": "2018-04-13T05:52:43.321Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2018-03-25",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.8
+    },
+    "total_hours": 718.4,
+    "logbook": {
+        "size": 7507968,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--54ada710eb2e1ed4bee6661993ffc717f0af913a/LogTenCoreDataStore.sql",
+    "destroyed": false
+}, {
+    "id": 42,
+    "created_at": "2018-01-05T09:54:17.457Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2018-01-03",
+        "origin": "VIS",
+        "destination": "SQL",
+        "duration": 1.1
+    },
+    "total_hours": 709.4,
+    "logbook": {
+        "size": 7462912,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-108.sql",
+    "destroyed": false
+}, {
+    "id": 41,
+    "created_at": "2017-09-20T01:03:06.758Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2017-08-26",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.8
+    },
+    "total_hours": 702.4,
+    "logbook": {
+        "size": 7401472,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-107.sql",
+    "destroyed": false
+}, {
+    "id": 40,
+    "created_at": "2017-05-12T09:40:19.199Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2017-04-29",
+        "origin": "CMA",
+        "destination": "SQL",
+        "duration": 2.0
+    },
+    "total_hours": 683.8,
+    "logbook": {
+        "size": 7364608,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-106.sql",
+    "destroyed": false
+}, {
+    "id": 39,
+    "created_at": "2017-03-09T01:32:14.626Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2017-03-06",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.2
+    },
+    "total_hours": 673.8,
+    "logbook": {
+        "size": 7348224,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-104.sql",
+    "destroyed": false
+}, {
+    "id": 38,
+    "created_at": "2017-03-02T03:34:07.227Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2017-03-01",
+        "origin": "OGD",
+        "destination": "SQL",
+        "duration": 3.2
+    },
+    "total_hours": 674.5,
+    "logbook": {
+        "size": 7344128,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-103.sql",
+    "destroyed": false
+}, {
+    "id": 37,
+    "created_at": "2017-02-22T04:00:36.674Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2017-02-18",
+        "origin": "HWD",
+        "destination": "SQL",
+        "duration": 0.4
+    },
+    "total_hours": 652.4,
+    "logbook": {
+        "size": 7307264,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-102.sql",
+    "destroyed": false
+}, {
+    "id": 36,
+    "created_at": "2016-12-29T21:33:05.151Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2016-12-24",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 648.8,
+    "logbook": {
+        "size": 7303168,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-100.sql",
+    "destroyed": false
+}, {
+    "id": 35,
+    "created_at": "2016-12-14T18:32:34.788Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2016-12-14",
+        "origin": "HWD",
+        "destination": "SQL",
+        "duration": 0.4
+    },
+    "total_hours": 647.8,
+    "logbook": {
+        "size": 7303168,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-99.sql",
+    "destroyed": false
+}, {
+    "id": 34,
+    "created_at": "2016-12-03T00:01:11.114Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2016-11-27",
+        "origin": "RPJ",
+        "destination": "BMI",
+        "duration": 1.2
+    },
+    "total_hours": 644.9,
+    "logbook": {
+        "size": 7303168,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-98.sql",
+    "destroyed": false
+}, {
+    "id": 33,
+    "created_at": "2016-11-09T20:21:37.933Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2016-11-02",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 636.9,
+    "logbook": {
+        "size": 7192576,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-97.sql",
+    "destroyed": false
+}, {
+    "id": 32,
+    "created_at": "2016-11-09T20:19:19.810Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2016-11-02",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 636.9,
+    "logbook": {
+        "size": 7192576,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-96.sql",
+    "destroyed": false
+}, {
+    "id": 31,
+    "created_at": "2016-10-06T23:59:21.394Z",
+    "hostname": "Titan",
+    "last_flight": {
+        "date": "2016-10-01",
+        "origin": "CCR",
+        "destination": "SQL",
+        "duration": 0.5
+    },
+    "total_hours": 627.6,
+    "logbook": {
+        "size": 6828032,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-95.sql",
+    "destroyed": false
+}, {
+    "id": 30,
+    "created_at": "2016-07-04T04:32:21.340Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2016-07-03",
+        "origin": "D83",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 614.6,
+    "logbook": {
+        "size": 7557120,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-65.sql",
+    "destroyed": false
+}, {
+    "id": 29,
+    "created_at": "2016-03-27T05:00:35.910Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2016-03-26",
+        "origin": "HAF",
+        "destination": "SQL",
+        "duration": 0.3
+    },
+    "total_hours": 600.1,
+    "logbook": {
+        "size": 6848512,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-63.sql",
+    "destroyed": false
+}, {
+    "id": 28,
+    "created_at": "2016-03-04T06:00:17.546Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2016-03-01",
+        "origin": "FUL",
+        "destination": "SQL",
+        "duration": 2.3
+    },
+    "total_hours": 599.2,
+    "logbook": {
+        "size": 4620288,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-60.sql",
+    "destroyed": false
+}, {
+    "id": 27,
+    "created_at": "2015-12-23T04:57:29.816Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-12-20",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 0.9
+    },
+    "total_hours": 589.6,
+    "logbook": {
+        "size": 4210688,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-59.sql",
+    "destroyed": false
+}, {
+    "id": 26,
+    "created_at": "2015-12-05T05:59:14.585Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-12-05",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 0.6
+    },
+    "total_hours": 579.6,
+    "logbook": {
+        "size": 3801088,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-58.sql",
+    "destroyed": false
+}, {
+    "id": 25,
+    "created_at": "2015-11-07T19:44:38.356Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-10-24",
+        "origin": "PRB",
+        "destination": "SQL",
+        "duration": 1.1
+    },
+    "total_hours": 574.9,
+    "logbook": {
+        "size": 3575808,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-57.sql",
+    "destroyed": false
+}, {
+    "id": 24,
+    "created_at": "2015-10-05T18:53:01.973Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-10-03",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.1
+    },
+    "total_hours": 572.8,
+    "logbook": {
+        "size": 3604480,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-56.sql",
+    "destroyed": false
+}, {
+    "id": 23,
+    "created_at": "2015-09-28T01:40:13.326Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-09-26",
+        "origin": null,
+        "destination": null,
+        "duration": 0.1
+    },
+    "total_hours": 571.7,
+    "logbook": {
+        "size": 3457024,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-55.sql",
+    "destroyed": false
+}, {
+    "id": 22,
+    "created_at": "2015-09-27T01:57:07.572Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-08-08",
+        "origin": "PRB",
+        "destination": "SQL",
+        "duration": 1.1
+    },
+    "total_hours": 563.6,
+    "logbook": {
+        "size": 3325952,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-54.sql",
+    "destroyed": false
+}, {
+    "id": 21,
+    "created_at": "2015-08-23T02:25:20.922Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-08-08",
+        "origin": "PRB",
+        "destination": "SQL",
+        "duration": 1.1
+    },
+    "total_hours": 563.6,
+    "logbook": {
+        "size": 3325952,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-53.sql",
+    "destroyed": false
+}, {
+    "id": 20,
+    "created_at": "2015-05-27T08:48:09.695Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-05-25",
+        "origin": "CEC",
+        "destination": "SQL",
+        "duration": 2.2
+    },
+    "total_hours": 540.2,
+    "logbook": {
+        "size": 3321856,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-52.sql",
+    "destroyed": false
+}, {
+    "id": 19,
+    "created_at": "2015-03-03T04:42:50.789Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-03-02",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.4
+    },
+    "total_hours": 499.6,
+    "logbook": {
+        "size": 3186688,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-51.sql",
+    "destroyed": false
+}, {
+    "id": 18,
+    "created_at": "2015-02-23T19:43:50.382Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2015-02-20",
+        "origin": "CIC",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 498.2,
+    "logbook": {
+        "size": 3178496,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-50.sql",
+    "destroyed": false
+}, {
+    "id": 17,
+    "created_at": "2015-01-01T23:51:24.027Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-12-31",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 0.9
+    },
+    "total_hours": 483.3,
+    "logbook": {
+        "size": 3153920,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-47.sql",
+    "destroyed": false
+}, {
+    "id": 16,
+    "created_at": "2014-12-20T14:55:06.980Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-11-16",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 475.6,
+    "logbook": {
+        "size": 3047424,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-46.sql",
+    "destroyed": false
+}, {
+    "id": 15,
+    "created_at": "2014-10-25T23:16:54.330Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-10-24",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 0.9
+    },
+    "total_hours": 472.4,
+    "logbook": {
+        "size": 3047424,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-45.sql",
+    "destroyed": false
+}, {
+    "id": 14,
+    "created_at": "2014-10-20T07:39:28.969Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-10-18",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 472.6,
+    "logbook": {
+        "size": 3022848,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-44.sql",
+    "destroyed": false
+}, {
+    "id": 13,
+    "created_at": "2014-10-20T06:06:34.187Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-10-13",
+        "origin": "E16",
+        "destination": "SQL",
+        "duration": 0.5
+    },
+    "total_hours": 466.8,
+    "logbook": {
+        "size": 3330048,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-43.sql",
+    "destroyed": false
+}, {
+    "id": 12,
+    "created_at": "2014-10-13T05:48:45.144Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-10-13",
+        "origin": "E16",
+        "destination": "SQL",
+        "duration": 0.5
+    },
+    "total_hours": 466.8,
+    "logbook": {
+        "size": 3330048,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-42.sql",
+    "destroyed": false
+}, {
+    "id": 11,
+    "created_at": "2014-10-05T05:45:16.600Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-10-05",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 2.0
+    },
+    "total_hours": 459.5,
+    "logbook": {
+        "size": 3330048,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-41.sql",
+    "destroyed": false
+}, {
+    "id": 10,
+    "created_at": "2014-10-04T06:44:55.232Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-10-04",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 0.7
+    },
+    "total_hours": 457.5,
+    "logbook": {
+        "size": 3330048,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-40.sql",
+    "destroyed": false
+}, {
+    "id": 9,
+    "created_at": "2014-10-03T08:44:34.558Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-09-28",
+        "origin": "CCB",
+        "destination": "SQL",
+        "duration": 3.3
+    },
+    "total_hours": 456.8,
+    "logbook": {
+        "size": 3436544,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-39.sql",
+    "destroyed": false
+}, {
+    "id": 8,
+    "created_at": "2014-09-28T18:57:01.460Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-09-28",
+        "origin": "CCB",
+        "destination": "SQL",
+        "duration": 3.3
+    },
+    "total_hours": 456.8,
+    "logbook": {
+        "size": 3436544,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-38.sql",
+    "destroyed": false
+}, {
+    "id": 7,
+    "created_at": "2014-09-28T18:26:55.442Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-09-28",
+        "origin": "CCB",
+        "destination": "SQL",
+        "duration": 3.3
+    },
+    "total_hours": 456.8,
+    "logbook": {
+        "size": 3313664,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-37.sql",
+    "destroyed": false
+}, {
+    "id": 6,
+    "created_at": "2014-09-20T02:01:17.851Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-09-20",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 0.0
+    },
+    "total_hours": 449.6,
+    "logbook": {
+        "size": 3260416,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-36.sql",
+    "destroyed": false
+}, {
+    "id": 5,
+    "created_at": "2014-09-17T07:27:54.125Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-08-23",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 449.6,
+    "logbook": {
+        "size": 3252224,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-35.sql",
+    "destroyed": false
+}, {
+    "id": 4,
+    "created_at": "2014-08-24T20:44:17.609Z",
+    "hostname": "Aergia",
+    "last_flight": {
+        "date": "2014-08-23",
+        "origin": "SQL",
+        "destination": "SQL",
+        "duration": 1.0
+    },
+    "total_hours": 449.6,
+    "logbook": {
+        "size": 3252224,
+        "analyzed": true
+    },
+    "download_url": "https://app.logtensafe.com/rails/active_storage/blobs/abc123/backup-34.sql",
+    "destroyed": false
+}]
