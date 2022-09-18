@@ -65,7 +65,7 @@ public struct Backup: Codable, Identifiable, Equatable, Hashable {
     public var createdAt: Date? { return Self.datetimeParser.date(from: createdAtString) }
     
     /** A temporary URL where the logbook file can be downloaded. */
-    public var downloadURL: URL? { return appURL.appendingPathComponent(downloadURLString) }
+    public var downloadURL: URL? { return URL(string: downloadURLString) }
     
     /**
       * True if the JSON response was from a DELETE operation that destoyed this

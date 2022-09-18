@@ -19,7 +19,7 @@ struct AlertSheetView: View {
             }
             HStack {
                 Spacer()
-                Button("OK") { self.viewController.clearError() }
+                Button("OK") { error = nil }
             }
         }.padding()
     }

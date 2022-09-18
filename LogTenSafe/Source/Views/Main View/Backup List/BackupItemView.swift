@@ -2,8 +2,8 @@ import SwiftUI
 
 struct BackupItemView: View {
     let backup: Backup
-    
-    @EnvironmentObject private var viewController: MainViewController
+    let restoringBackup: Bool
+    let restoreBackup: (Backup) -> Void
     
     private static let titleDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -43,9 +43,9 @@ struct BackupItemView: View {
             VStack(alignment: .trailing) {
                 HStack {
                     Text(Self.sizeFormatter.string(fromByteCount: Int64(backup.logbook.size))).controlSize(.small)
-                    Button("Restore") { self.viewController.restoreBackup(self.backup) }
+                    Button("Restore") { self.restoreBackup(self.backup) }
                         .controlSize(.small)
-                        .disabled(viewController.restoringBackup || !self.backup.logbook.analyzed)
+                        .disabled(restoringBackup || !backup.logbook.analyzed)
                 }
                 Text("\(Self.hoursFormatter.string(from: NSNumber(value: backup.totalHours))!) hr").controlSize(.small)
             }
@@ -66,6 +66,6 @@ struct BackupItemView: View {
 
 struct BackupItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BackupItemView(backup: exampleBackups()[0]).environmentObject(MainViewController())
+        BackupItemView(backup: exampleBackups()[0], restoringBackup: false, restoreBackup: { _ in })
     }
 }

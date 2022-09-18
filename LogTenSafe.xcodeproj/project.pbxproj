@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0111B4512457AC6800E196C9 /* AutoBackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111B4502457AC6800E196C9 /* AutoBackupService.swift */; };
+		013280B72817D3790078980A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013280B62817D3790078980A /* LoginViewController.swift */; };
+		013280B92817D6B10078980A /* BackupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013280B82817D6B10078980A /* BackupsViewController.swift */; };
+		013280BA2817D6B10078980A /* BackupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013280B82817D6B10078980A /* BackupsViewController.swift */; };
 		0134ED4024502564003195E3 /* BackupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED3F24502564003195E3 /* BackupListView.swift */; };
 		0134ED45245025C3003195E3 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED44245025C3003195E3 /* Backup.swift */; };
 		0134ED492450B4A7003195E3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ED482450B4A7003195E3 /* APIService.swift */; };
@@ -82,6 +85,8 @@
 
 /* Begin PBXFileReference section */
 		0111B4502457AC6800E196C9 /* AutoBackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoBackupService.swift; sourceTree = "<group>"; };
+		013280B62817D3790078980A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		013280B82817D6B10078980A /* BackupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupsViewController.swift; sourceTree = "<group>"; };
 		0134ED3F24502564003195E3 /* BackupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupListView.swift; sourceTree = "<group>"; };
 		0134ED44245025C3003195E3 /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
 		0134ED482450B4A7003195E3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -221,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				01CD85282450215200A6114B /* MainViewController.swift */,
+				013280B82817D6B10078980A /* BackupsViewController.swift */,
+				013280B62817D3790078980A /* LoginViewController.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
@@ -609,8 +616,10 @@
 				01C7D26A2458F9F6009009C7 /* ActionCableService.swift in Sources */,
 				0134ED512450C0E3003195E3 /* ExampleBackups.swift in Sources */,
 				01E0B07F2455189A008C48DC /* ProgressSheetView.swift in Sources */,
+				013280B72817D3790078980A /* LoginViewController.swift in Sources */,
 				01E0B08624552FDD008C48DC /* AlertSheetView.swift in Sources */,
 				01FB49C92453F20900370441 /* Login.swift in Sources */,
+				013280B92817D6B10078980A /* BackupsViewController.swift in Sources */,
 				01B2D20924580F1F00879826 /* AboutViewDelegate.swift in Sources */,
 				01CD85292450215200A6114B /* MainViewController.swift in Sources */,
 				0134ED45245025C3003195E3 /* Backup.swift in Sources */,
@@ -626,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013280BA2817D6B10078980A /* BackupsViewController.swift in Sources */,
 				01D2BD9C244F6E490006EDBB /* LogTenSafeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

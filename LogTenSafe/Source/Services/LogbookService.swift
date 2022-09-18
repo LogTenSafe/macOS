@@ -49,7 +49,7 @@ public class LogbookService {
             panel.message = "Choose the LogTenCoreDataStore.sql file:"
             panel.prompt = "Choose"
             panel.directoryURL = defaultLogbookURL
-            panel.allowedFileTypes = [".sql"]
+            panel.allowedFileTypes = ["org.iso.sql"]
             
             guard panel.runModal() == .OK else { return false }
             guard let logboookURL = panel.url else { return false }

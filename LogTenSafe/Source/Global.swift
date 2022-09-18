@@ -49,6 +49,13 @@ public enum LogTenSafeError: Error {
      * * `data`: The invalid websocket data.
      */
     case invalidWebSocketData(data: String)
+    
+    /**
+     * Thrown when LogTenSafe returns a non-200 status code.
+     *
+     * * `statusCode`: The HTTP status code.
+     */
+    case badStatusCode(_ statusCode: Int)
 }
 
 extension LogTenSafeError: LocalizedError {
@@ -56,6 +63,7 @@ extension LogTenSafeError: LocalizedError {
         switch self {
             case .invalidLogin: return "Your email or password was incorrect."
             case .invalidWebSocketData: return "There was a problem with LogTenSafe.com."
+            case let .badStatusCode(statusCode): return "LogTenSafe.com responded with a \(statusCode) error."
         }
     }
 }

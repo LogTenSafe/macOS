@@ -19,9 +19,9 @@ struct ContentHeaderView: View {
                 }
             }
             Spacer()
-            Button(action: { self.viewController.addBackup() }) {
+            Button(action: { self.viewController.backupsViewController.addBackup() }) {
                 Text("Back Up Now")
-            }.disabled(viewController.makingBackup)
+            }.disabled(viewController.backupsViewController.makingBackup)
         }
     }
 }

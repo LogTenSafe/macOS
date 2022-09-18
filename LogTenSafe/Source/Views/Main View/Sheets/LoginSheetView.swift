@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct LoginSheetView: View {
-    @EnvironmentObject var viewController: MainViewController
+    @EnvironmentObject var viewController: LoginViewController
     @Namespace private var namespace
     
     @State var email: String = ""

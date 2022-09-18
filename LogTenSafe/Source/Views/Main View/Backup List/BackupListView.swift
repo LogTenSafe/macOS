@@ -1,12 +1,14 @@
 import SwiftUI
 
 struct BackupListView: View {
-    var backups: Array<Backup>
+    @EnvironmentObject private var viewController: BackupsViewController
     
     var body: some View {
-        List(backups, id: \.id) { backup in
+        List(viewController.backups, id: \.id) { backup in
             VStack {
-                BackupItemView(backup: backup)
+                BackupItemView(backup: backup,
+                               restoringBackup: viewController.restoringBackup,
+                               restoreBackup: viewController.restoreBackup)
                 Divider()
             }
         }
@@ -14,7 +16,10 @@ struct BackupListView: View {
 }
 
 struct BackupListView_Previews: PreviewProvider {
+    private static let controller = MainViewController()
+    
     static var previews: some View {
-        BackupListView(backups: exampleBackups())
+        BackupListView()
+            .environmentObject(controller.backupsViewController)
     }
 }

@@ -13,19 +13,19 @@ struct LogTenSafeApp: App {
                 Button(action: { NSWorkspace.shared.open(appURL) }, label: { Text("Visit Website") })
             }
             CommandGroup(replacing: .newItem) {
-                Button(action: { viewController.addBackup() }, label: { Text("Back Up Now") })
+                Button(action: { viewController.backupsViewController.addBackup() }, label: { Text("Back Up Now") })
             }
             CommandGroup(before: .toolbar) {
-                Button(action: { viewController.loadBackups() }, label: { Text("Refresh List") })
+                Button(action: { viewController.backupsViewController.loadBackups() }, label: { Text("Refresh List") })
             }
             CommandGroup(before: .appTermination) {
-                Button(action: { viewController.logOut() }, label: { Text("Log Out") })
+                Button(action: { viewController.loginViewController.logOut() }, label: { Text("Log Out") })
             }
         }
     }
     
     init() {
         Bugsnag.start(withApiKey: "730d83065b6d027cbded0b6e99314b22")
-        viewController.loadBackups()
+        viewController.backupsViewController.loadBackups()
     }
 }
