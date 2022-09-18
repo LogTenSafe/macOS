@@ -5,6 +5,6 @@
       location = "container:LogTenSafe.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:bugsnag-cocoa/OSX/Bugsnag.xcodeproj">
+      location = "group:bugsnag-cocoa/Bugsnag.xcworkspace">
    </FileRef>
 </Workspace>
