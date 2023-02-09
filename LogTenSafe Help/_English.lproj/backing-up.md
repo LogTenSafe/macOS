@@ -30,7 +30,7 @@ Your logbook should appear on the website and on the application shortly after
 the upload completes. If it does not, check to make sure that your logbook has
 actually changed since the last backup.
 
-* If you want LogTenSafe to automatically back up your logbook regularly, read
-[**Automatically backing up your logbook**](automatic-backups.html).
-* If you need to restore a logbook from a backup, read
+- If you want LogTenSafe to automatically back up your logbook regularly, read
+  [**Automatically backing up your logbook**](automatic-backups.html).
+- If you need to restore a logbook from a backup, read
   [**Restoring from a backup**](restoring.html).

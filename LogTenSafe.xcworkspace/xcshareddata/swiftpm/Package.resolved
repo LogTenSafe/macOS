@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "b2fa556e4e48cbf06cf8c63def138c98f4b811fa",
+        "version" : "5.8.0"
+      }
+    },
+    {
+      "identity" : "bugsnag-cocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bugsnag/bugsnag-cocoa",
+      "state" : {
+        "revision" : "2f373f21b965f1b13d7070662e2d35f46c17d975",
+        "version" : "6.27.2"
+      }
+    },
+    {
+      "identity" : "checksum",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rnine/Checksum.git",
+      "state" : {
+        "revision" : "cd1ae53384dd578a84a0afef492a4f5d6202b068",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "defaults",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/Defaults",
+      "state" : {
+        "revision" : "229dea452fee8d2205f56a12e5c21dfec00948f2",
+        "version" : "4.2.2"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
+        "version" : "4.0.6"
+      }
+    },
+    {
+      "identity" : "swift-actioncableclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/LogTenSafe/Swift-ActionCableClient.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2ccfa05514d59f437ac9f41d587e1cca4abf1d1b"
+      }
+    }
+  ],
+  "version" : 2
+}

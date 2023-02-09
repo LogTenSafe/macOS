@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "Bugsnag",
+        "repositoryURL": "https://github.com/bugsnag/bugsnag-cocoa",
+        "state": {
+          "branch": null,
+          "revision": "5918cc9226d7f2e8128ad9ea4dc62ed84c255568",
+          "version": "6.12.1"
+        }
+      },
+      {
+        "package": "Checksum",
+        "repositoryURL": "https://github.com/rnine/Checksum.git",
+        "state": {
+          "branch": null,
+          "revision": "cd1ae53384dd578a84a0afef492a4f5d6202b068",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "Defaults",
+        "repositoryURL": "https://github.com/sindresorhus/Defaults",
+        "state": {
+          "branch": null,
+          "revision": "229dea452fee8d2205f56a12e5c21dfec00948f2",
+          "version": "4.2.2"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "state": {
+          "branch": null,
+          "revision": "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+          "version": "4.0.4"
+        }
+      },
+      {
+        "package": "ActionCableClient",
+        "repositoryURL": "https://github.com/LogTenSafe/Swift-ActionCableClient.git",
+        "state": {
+          "branch": "master",
+          "revision": "2ccfa05514d59f437ac9f41d587e1cca4abf1d1b",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -35,4 +35,4 @@ email and password for your new account.
 
 ![Login screen on application](app-login.png)
 
-* Continue to [**Backing up**](backing-up.html) to back up your logbook.
+- Continue to [**Backing up**](backing-up.html) to back up your logbook.
